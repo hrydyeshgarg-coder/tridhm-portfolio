@@ -29,7 +29,7 @@ const SERVICE = [
     org: "Roar 4 Change — Shelter Coordinator",
     date: "Jul 2023 – Dec 2025",
     featured: true,
-    desc: "2.5 years supporting a homeless shelter in Irving, TX.",
+    desc: "2.5 years supporting homeless shelters across multiple DFW cities.",
   },
   { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and county archive research." },
   { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive leadership and communication program." },
