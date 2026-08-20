@@ -119,20 +119,20 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — transparent-background character, no seam possible; height matched to Software Creation panel */}
+            {/* Hero — new tighter/bigger crop, gradient re-matched to this image's exact background color and position */}
             <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
               <div
                 className="absolute inset-0"
-                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 24%, #a5bfd6 37%, #a5bfd6 100%)" }}
+                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 20%, #a8c3d8 33%, #a8c3d8 100%)" }}
               />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
-                  src="/images/hero-character-transparent.png"
+                  src="/images/hero-character-v2.jpg"
                   alt="Illustration of a student sitting cross-legged with a laptop"
-                  width={1440}
-                  height={1080}
+                  width={868}
+                  height={784}
                   priority
-                  sizes="(max-width: 1024px) 60vw, 480px"
+                  sizes="(max-width: 1024px) 60vw, 450px"
                   className="h-[330px] sm:h-[375px] w-auto object-contain"
                 />
               </div>
