@@ -127,7 +127,7 @@ export default function DesignK() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 640px"
-                className="object-cover object-[100%_50%]"
+                className="object-cover object-[100%_50%] scale-[1.35] origin-right"
               />
               <div
                 className="absolute inset-0"
