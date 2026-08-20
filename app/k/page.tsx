@@ -188,7 +188,13 @@ export default function DesignK() {
                       <Panel className="!p-4 h-full hover:!border-[#0d946377]">
                         <div className="flex items-center justify-between mb-3">
                           <span className="text-[11px] opacity-45">{w.n}</span>
-                          <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ background: `${GREEN}18`, color: GREEN }}>{w.tag}</span>
+                          <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ background: `${GREEN}18`, color: GREEN }}>
+                            {w.tag === "IEEE PAPER" && (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
+                            )}
+                            {w.tag}
+                          </span>
                         </div>
                         <h3 className="text-[13px] font-semibold mb-1">{w.title}</h3>
                         <p className="text-[11px] opacity-60 leading-relaxed mb-3">{w.desc}</p>
@@ -483,8 +489,18 @@ export default function DesignK() {
                   <Label>⊞ VERIFIED_SOURCES</Label>
                   <div className="flex flex-col gap-3 text-[11.5px]">
                     {SOURCES.map((s) => (
-                      <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between opacity-75 hover:opacity-100">
-                        {s.label}
+                      <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-2 opacity-75 hover:opacity-100">
+                        <span className="inline-flex items-center gap-1.5">
+                          {s.label.includes("IEEE") && (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src="/images/logo-ieee.svg" alt="" className="h-3 w-auto shrink-0" />
+                          )}
+                          {s.href.includes("amazon.com") && (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src="/images/logo-amazon.svg" alt="" className="h-3 w-auto shrink-0" />
+                          )}
+                          {s.label}
+                        </span>
                         <ExternalLink size={11} />
                       </a>
                     ))}

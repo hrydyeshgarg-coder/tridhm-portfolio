@@ -68,9 +68,17 @@ export function KDetailShell({
           {tags.map((t) => (
             <span
               key={t}
-              className="text-[10px] px-2 py-1 rounded border"
+              className="inline-flex items-center gap-1.5 text-[10px] px-2 py-1 rounded border"
               style={{ borderColor: BORDER, background: PANEL }}
             >
+              {t === "IEEE" && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
+              )}
+              {t === "Amazon" && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src="/images/logo-amazon.svg" alt="" className="h-2.5 w-auto" />
+              )}
               {t}
             </span>
           ))}
