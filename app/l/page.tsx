@@ -411,10 +411,10 @@ export default function DesignK() {
                   <div className="border-b" style={{ borderColor: TINTS.research.border }}>
                     <Image
                       src="/images/research-banner-trim.png"
-                      alt="Illustration of a person thinking at a desk with a laptop, question mark, and books"
-                      width={2733}
-                      height={1419}
-                      className="w-full h-[180px] sm:h-[210px] object-cover object-[45%_30%]"
+                      alt="Illustration of a person thinking at a desk with a laptop, microscope, and a question mark"
+                      width={2477}
+                      height={1581}
+                      className="w-full h-[190px] sm:h-[220px] object-cover object-[38%_25%]"
                     />
                   </div>
                   <div className="flex flex-col divide-y p-5 sm:p-6" style={{ borderColor: TINTS.research.border }}>
