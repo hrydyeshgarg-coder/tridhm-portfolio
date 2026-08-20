@@ -123,7 +123,7 @@ export default function DesignK() {
             <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
               <div
                 className="absolute inset-0"
-                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a4c1d6 68%, #a4c1d6 100%)" }}
+                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 24%, #a5bfd6 37%, #a5bfd6 100%)" }}
               />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
