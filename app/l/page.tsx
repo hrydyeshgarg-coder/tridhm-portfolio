@@ -123,7 +123,7 @@ export default function DesignK() {
             <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
               <div
                 className="absolute inset-0"
-                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 28%, #a8c3d8 40%, #a8c3d8 100%)" }}
+                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 32%, #a8c3d8 44%, #a8c3d8 100%)" }}
               />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
@@ -132,11 +132,11 @@ export default function DesignK() {
                   width={868}
                   height={784}
                   priority
-                  sizes="(max-width: 1024px) 60vw, 400px"
-                  className="h-[308px] sm:h-[335px] w-auto object-contain"
+                  sizes="(max-width: 1024px) 60vw, 380px"
+                  className="h-[288px] sm:h-[312px] w-auto object-contain"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[160px] sm:max-w-[170px] min-h-[440px] sm:min-h-[478px]">
+              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[175px] sm:max-w-[188px] min-h-[440px] sm:min-h-[478px]">
                 <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
                 <p className="text-[9.5px] mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                 <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
