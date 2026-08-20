@@ -123,7 +123,7 @@ export default function DesignK() {
             <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
               <div
                 className="absolute inset-0"
-                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 20%, #a8c3d8 33%, #a8c3d8 100%)" }}
+                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 28%, #a8c3d8 40%, #a8c3d8 100%)" }}
               />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
@@ -132,17 +132,17 @@ export default function DesignK() {
                   width={868}
                   height={784}
                   priority
-                  sizes="(max-width: 1024px) 60vw, 450px"
-                  className="h-[330px] sm:h-[375px] w-auto object-contain"
+                  sizes="(max-width: 1024px) 60vw, 400px"
+                  className="h-[308px] sm:h-[335px] w-auto object-contain"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[210px] sm:max-w-[225px] min-h-[440px] sm:min-h-[478px]">
+              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[205px] sm:max-w-[220px] min-h-[440px] sm:min-h-[478px]">
                 <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
                 <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
-                <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
+                <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
                   Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
                 </h1>
-                <p className="text-[13px] leading-relaxed opacity-70 mb-6">
+                <p className="text-[11.5px] leading-relaxed opacity-70 mb-4">
                   Rising senior researching applied AI, writing published fiction, and shipping software real people use.
                 </p>
                 <div className="flex gap-3 flex-wrap">
