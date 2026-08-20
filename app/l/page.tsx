@@ -119,8 +119,12 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — tightly-cropped character fills the box, panel background matches his own sky blue so there's no seam */}
-            <Panel className="relative overflow-hidden !p-0 h-[460px] sm:h-[500px]" tint={{ bg: "#a4c1d6", border: "#a4c1d6" }}>
+            {/* Hero — white panel transitions into the picture's own blue, image size is fixed so it can't grow with the text */}
+            <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a4c1d6 68%, #a4c1d6 100%)" }}
+              />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
                   src="/images/hero-character-cropped.jpg"
@@ -129,10 +133,10 @@ export default function DesignK() {
                   height={958}
                   priority
                   sizes="(max-width: 1024px) 60vw, 400px"
-                  className="h-[65%] sm:h-[68%] w-auto object-contain"
+                  className="h-[300px] sm:h-[340px] w-auto object-contain"
                 />
               </div>
-              <div className="relative z-10 h-full flex flex-col justify-center p-6 sm:p-8 max-w-[210px] sm:max-w-[225px]">
+              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[210px] sm:max-w-[225px] min-h-[460px] sm:min-h-[500px]">
                 <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
                 <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                 <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
