@@ -120,20 +120,20 @@ export default function DesignK() {
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
             {/* Hero — full-bleed character illustration with text overlaid on top */}
-            <Panel className="relative overflow-hidden !p-0 min-h-[400px] sm:min-h-[440px]">
+            <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
               <Image
                 src="/images/hero-laptop-character.png"
                 alt="Illustration of a student sitting cross-legged with a laptop"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 640px"
-                className="object-cover object-[88%_50%]"
+                className="object-cover object-[100%_50%]"
               />
               <div
                 className="absolute inset-0"
-                style={{ background: "linear-gradient(90deg, rgba(244,245,243,0.97) 0%, rgba(244,245,243,0.92) 24%, rgba(244,245,243,0.35) 42%, rgba(244,245,243,0) 55%)" }}
+                style={{ background: "linear-gradient(90deg, rgba(244,245,243,0.98) 0%, rgba(244,245,243,0.94) 22%, rgba(244,245,243,0.3) 36%, rgba(244,245,243,0) 46%)" }}
               />
-              <div className="relative z-10 h-full flex flex-col justify-center p-6 sm:p-8 max-w-[260px] sm:max-w-[290px]">
+              <div className="relative z-10 h-full flex flex-col justify-center p-6 sm:p-8 max-w-[230px] sm:max-w-[250px]">
                 <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
                 <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                 <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
