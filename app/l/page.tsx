@@ -408,13 +408,13 @@ export default function DesignK() {
               <div id="research">
                 <Label color={TINTS.research.accent}>◈ RESEARCH</Label>
                 <Panel tint={TINTS.research} className="!p-0 overflow-hidden">
-                  <div className="border-b" style={{ borderColor: TINTS.research.border }}>
+                  <div className="border-b" style={{ borderColor: TINTS.research.border, background: "#fbfcfd" }}>
                     <Image
                       src="/images/research-banner-trim.png"
                       alt="Illustration of a person thinking at a desk with a laptop, microscope, and a question mark"
                       width={2477}
                       height={1581}
-                      className="w-full h-[190px] sm:h-[220px] object-cover object-[38%_25%]"
+                      className="w-full h-auto"
                     />
                   </div>
                   <div className="flex flex-col divide-y p-5 sm:p-6" style={{ borderColor: TINTS.research.border }}>
