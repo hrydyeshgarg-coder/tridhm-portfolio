@@ -99,21 +99,13 @@ const AWARDS = [
 export default function DesignK() {
   return (
     <div className={`${mono.className} min-h-screen`} style={{ background: BG, color: INK }}>
-      <div className="w-full overflow-hidden flex justify-center" style={{ background: "#03050a" }}>
-        <Image
-          src="/images/logo-tridhm.png"
-          alt="Tridhm Garg"
-          width={1536}
-          height={1024}
-          priority
-          className="w-full max-w-[720px] h-auto max-h-[260px] sm:max-h-[320px] object-cover"
-        />
-      </div>
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 pt-6 pb-10">
         {/* Top nav */}
         <div className="flex items-center justify-between mb-4 px-1 flex-wrap gap-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded flex items-center justify-center font-bold text-xs" style={{ background: GREEN, color: "#ffffff" }}>TG</div>
+            <div className="w-8 h-8 rounded overflow-hidden flex items-center justify-center" style={{ background: "#050914" }}>
+              <Image src="/images/logo-tridhm.png" alt="Tridhm Garg logo" width={64} height={64} className="w-[85%] h-[85%] object-contain" />
+            </div>
             <span className="font-semibold text-sm">TRIDHM GARG</span>
             <span className="text-[11px] opacity-50 hidden sm:inline">AI_RESEARCHER · AUTHOR</span>
           </div>
