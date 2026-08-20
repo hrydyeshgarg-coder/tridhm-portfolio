@@ -119,32 +119,32 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — character on the left half, text on the right half, no overlap */}
-            <Panel className="relative overflow-hidden !p-0 min-h-[420px] sm:min-h-[440px]">
-              <div className="grid sm:grid-cols-2 h-full">
-                <div className="relative min-h-[200px] sm:min-h-0" style={{ background: "#c8d9e8" }}>
-                  <Image
-                    src="/images/hero-laptop-character.png"
-                    alt="Illustration of a student sitting cross-legged with a laptop"
-                    fill
-                    priority
-                    sizes="(max-width: 640px) 100vw, 320px"
-                    className="object-cover object-center"
-                  />
-                </div>
-                <div className="flex flex-col justify-center p-6 sm:p-8">
-                  <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
-                  <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
-                  <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
-                    Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
-                  </h1>
-                  <p className="text-[13px] leading-relaxed opacity-70 mb-6">
-                    Rising senior researching applied AI, writing published fiction, and shipping software real people use.
-                  </p>
-                  <div className="flex gap-3 flex-wrap">
-                    <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN }}>VIEW_RESEARCH →</a>
-                    <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER }}>READ_NOVEL</Link>
-                  </div>
+            {/* Hero — full-bleed character illustration with text overlaid on top */}
+            <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
+              <Image
+                src="/images/hero-laptop-character.png"
+                alt="Illustration of a student sitting cross-legged with a laptop"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 640px"
+                className="object-cover object-[100%_50%]"
+              />
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(90deg, rgba(244,245,243,0.98) 0%, rgba(244,245,243,0.94) 22%, rgba(244,245,243,0.3) 36%, rgba(244,245,243,0) 46%)" }}
+              />
+              <div className="relative z-10 h-full flex flex-col justify-center p-6 sm:p-8 max-w-[230px] sm:max-w-[250px]">
+                <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
+                <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
+                <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
+                  Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
+                </h1>
+                <p className="text-[13px] leading-relaxed opacity-70 mb-6">
+                  Rising senior researching applied AI, writing published fiction, and shipping software real people use.
+                </p>
+                <div className="flex gap-3 flex-wrap">
+                  <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
+                  <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
                 </div>
               </div>
             </Panel>
