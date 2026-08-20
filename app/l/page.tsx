@@ -441,10 +441,10 @@ export default function DesignK() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/research-banner-trim.png"
-                      alt="Illustration of a person thinking at a desk with a laptop, microscope, and a question mark"
-                      width={2477}
-                      height={1581}
+                      src="/images/research-banner2-trim.png"
+                      alt="Illustration of a person thinking at a laptop with a question mark"
+                      width={2129}
+                      height={1489}
                       className="w-full h-auto block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.research.bg} 0%, transparent 100%)` }} />
