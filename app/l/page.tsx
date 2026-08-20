@@ -407,8 +407,17 @@ export default function DesignK() {
             <Reveal delay={80}>
               <div id="research">
                 <Label color={TINTS.research.accent}>◈ RESEARCH</Label>
-                <Panel tint={TINTS.research}>
-                  <div className="flex flex-col divide-y" style={{ borderColor: TINTS.research.border }}>
+                <Panel tint={TINTS.research} className="!p-0 overflow-hidden">
+                  <div className="border-b" style={{ borderColor: TINTS.research.border }}>
+                    <Image
+                      src="/images/research-banner-trim.png"
+                      alt="Illustration of a student working on a laptop"
+                      width={1844}
+                      height={1512}
+                      className="w-full h-[200px] sm:h-[230px] object-cover object-[50%_20%]"
+                    />
+                  </div>
+                  <div className="flex flex-col divide-y p-5 sm:p-6" style={{ borderColor: TINTS.research.border }}>
                     {RESEARCH_PAPERS.map((c) => (
                       <Link key={c.n} href={c.href} className="grid sm:grid-cols-[auto_auto_1fr_auto] gap-4 items-start py-5 first:pt-0 last:pb-0 group">
                         <span className="text-[11px] opacity-40 pt-1">{c.n}</span>
