@@ -193,6 +193,10 @@ export default function DesignK() {
                               // eslint-disable-next-line @next/next/no-img-element
                               <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
                             )}
+                            {w.tag === "LIVE SITE" && (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src="/images/logo-civichub.png" alt="" className="h-3 w-3 object-contain" />
+                            )}
                             {w.tag}
                           </span>
                         </div>
@@ -358,7 +362,12 @@ export default function DesignK() {
                 <Label color={TINTS.software.accent}>▣ SOFTWARE_CREATION</Label>
                 <Panel tint={TINTS.software}>
                   <Link href="/k/engineering/dfw-community-hub" className="block group mb-4">
-                    <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70">DFW Community Hub</h4>
+                    <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70 flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: TINTS.software.border }}>
+                        <Image src="/images/logo-civichub.png" alt="" width={24} height={24} className="w-full h-full object-contain" />
+                      </span>
+                      DFW Community Hub
+                    </h4>
                     <p className="text-[12px] opacity-70 leading-relaxed max-w-md mb-4">
                       A civic platform live for the whole DFW metroplex — issue reporting,
                       family support listings, and public resources for real residents.
@@ -498,6 +507,10 @@ export default function DesignK() {
                           {s.href.includes("amazon.com") && (
                             // eslint-disable-next-line @next/next/no-img-element
                             <img src="/images/logo-amazon.svg" alt="" className="h-3 w-auto shrink-0" />
+                          )}
+                          {s.href.includes("dfwcomp.org") && (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src="/images/logo-civichub.png" alt="" className="h-3.5 w-3.5 object-contain shrink-0" />
                           )}
                           {s.label}
                         </span>

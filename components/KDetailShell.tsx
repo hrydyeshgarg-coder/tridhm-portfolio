@@ -29,6 +29,7 @@ export function KDetailShell({
   tags,
   heroImage,
   heroAlt,
+  titleLogo,
   externalHref,
   externalLabel,
   children,
@@ -39,6 +40,7 @@ export function KDetailShell({
   tags: string[];
   heroImage?: string;
   heroAlt?: string;
+  titleLogo?: string;
   externalHref: string;
   externalLabel: string;
   children: React.ReactNode;
@@ -61,7 +63,14 @@ export function KDetailShell({
         <p className="text-[11px] tracking-[0.15em] uppercase mb-3 font-semibold" style={{ color: GREEN }}>
           {eyebrow}
         </p>
-        <h1 className="text-2xl sm:text-[32px] font-bold leading-tight mb-3">{title}</h1>
+        <h1 className="text-2xl sm:text-[32px] font-bold leading-tight mb-3 flex items-center gap-3">
+          {titleLogo && (
+            <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: BORDER }}>
+              <Image src={titleLogo} alt="" width={40} height={40} className="w-full h-full object-contain" />
+            </span>
+          )}
+          {title}
+        </h1>
         <p className="text-[12.5px] opacity-55 mb-4">{meta}</p>
 
         <div className="flex flex-wrap gap-2 mb-10">

@@ -9,6 +9,7 @@ export default function Page() {
       title="DFW Community Hub"
       meta="Developer · June – August 2026 · 20 hours per week"
       tags={["Next.js", "FastAPI", "Supabase", "TypeScript", "Python"]}
+      titleLogo="/images/logo-civichub.png"
       heroImage="/images/dfwcomp-home.jpg"
       heroAlt="DFW Community Hub homepage screenshot"
       externalHref="https://www.dfwcomp.org"
