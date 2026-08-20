@@ -103,9 +103,7 @@ export default function DesignK() {
         {/* Top nav */}
         <div className="flex items-center justify-between mb-4 px-1 flex-wrap gap-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded overflow-hidden flex items-center justify-center" style={{ background: "#050914" }}>
-              <Image src="/images/logo-tridhm.png" alt="Tridhm Garg logo" width={64} height={64} className="w-[85%] h-[85%] object-contain" />
-            </div>
+            <div className="w-7 h-7 rounded flex items-center justify-center font-bold text-xs" style={{ background: GREEN, color: "#ffffff" }}>TG</div>
             <span className="font-semibold text-sm">TRIDHM GARG</span>
             <span className="text-[11px] opacity-50 hidden sm:inline">AI_RESEARCHER · AUTHOR</span>
           </div>
