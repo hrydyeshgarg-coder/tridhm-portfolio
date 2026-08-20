@@ -457,35 +457,47 @@ export default function DesignK() {
             <Reveal delay={100}>
               <div id="writing">
                 <Label color={TINTS.writing.accent}>✎ WRITING</Label>
-                <Panel tint={TINTS.writing}>
-                  <div className="grid sm:grid-cols-[auto_1fr] gap-5">
-                    <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
-                      <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
-                        <Image src="/images/book-cover-front.jpg" alt="Abandoned and Left Behind front cover" width={300} height={480} className="w-full h-auto" />
-                      </div>
-                      <div className="w-24 rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
-                        <Image src="/images/book-cover-back.jpg" alt="Abandoned and Left Behind back cover" width={300} height={480} className="w-full h-auto" />
-                      </div>
-                    </Link>
-                    <div>
-                      <Link href="/l/writing/abandoned-and-left-behind" className="block group mb-3">
-                        <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70">Abandoned and Left Behind</h4>
-                        <p className="text-[12px] opacity-70 leading-relaxed">
-                          A 165-page self-published action-adventure novel set in 1969 — two men
-                          racing the FBI to find their way home. 4.0★ on Amazon.
-                        </p>
+                <Panel tint={TINTS.writing} className="!p-0 overflow-hidden">
+                  <div className="p-5 sm:p-6">
+                    <div className="grid sm:grid-cols-[auto_1fr] gap-5">
+                      <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book-cover-front.jpg" alt="Abandoned and Left Behind front cover" width={300} height={480} className="w-full h-auto" />
+                        </div>
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book-cover-back.jpg" alt="Abandoned and Left Behind back cover" width={300} height={480} className="w-full h-auto" />
+                        </div>
                       </Link>
-                      <p className="text-[11px] opacity-60 leading-relaxed mb-2">
-                        &ldquo;His love for writing came from his tutoring teacher, Mrs. Murphy.
-                        With the teacher&rsquo;s help, he has improved in his writing and editing.
-                        His interest is to connect with new audiences and write more and more
-                        novels on different genres.&rdquo;
-                      </p>
-                      <p className="text-[11px] opacity-55">
-                        A second manuscript, <em>Hell on Planet B</em>, was completed in 2024
-                        and is not yet published.
-                      </p>
+                      <div>
+                        <Link href="/l/writing/abandoned-and-left-behind" className="block group mb-3">
+                          <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70">Abandoned and Left Behind</h4>
+                          <p className="text-[12px] opacity-70 leading-relaxed">
+                            A 165-page self-published action-adventure novel set in 1969 — two men
+                            racing the FBI to find their way home. 4.0★ on Amazon.
+                          </p>
+                        </Link>
+                        <p className="text-[11px] opacity-60 leading-relaxed mb-2">
+                          &ldquo;His love for writing came from his tutoring teacher, Mrs. Murphy.
+                          With the teacher&rsquo;s help, he has improved in his writing and editing.
+                          His interest is to connect with new audiences and write more and more
+                          novels on different genres.&rdquo;
+                        </p>
+                        <p className="text-[11px] opacity-55">
+                          A second manuscript, <em>Hell on Planet B</em>, was completed in 2024
+                          and is not yet published.
+                        </p>
+                      </div>
                     </div>
+                  </div>
+                  <div className="relative">
+                    <Image
+                      src="/images/writing-banner.png"
+                      alt="Illustration of a boy happily writing at a desk with a typewriter and books"
+                      width={1456}
+                      height={816}
+                      className="w-full h-[275px] object-cover object-[50%_30%] block"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.writing.bg} 0%, transparent 100%)` }} />
                   </div>
                 </Panel>
               </div>
