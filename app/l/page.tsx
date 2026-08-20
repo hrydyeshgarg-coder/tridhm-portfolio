@@ -162,15 +162,6 @@ export default function DesignK() {
               <div id="education">
                 <Label color={TINTS.education.accent}>▤ EDUCATION</Label>
                 <Panel tint={TINTS.education} className="!p-0 overflow-hidden">
-                  <div className="border-b" style={{ borderColor: TINTS.education.border, background: "#fbfcfd" }}>
-                    <Image
-                      src="/images/education-desk-trim.png"
-                      alt="Illustration of a student thinking at a desk with a laptop, microscope, and books"
-                      width={2593}
-                      height={1490}
-                      className="w-full h-auto"
-                    />
-                  </div>
                   <div className="p-5 sm:p-6">
                     <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
                       <h4 className="text-[14px] font-semibold flex items-center gap-2">
@@ -189,6 +180,16 @@ export default function DesignK() {
                         <span key={c} className="text-[9.5px] px-2 py-1 rounded" style={{ background: "rgba(71,85,105,0.1)", color: TINTS.education.accent }}>AP {c}</span>
                       ))}
                     </div>
+                  </div>
+                  <div className="relative">
+                    <Image
+                      src="/images/education-desk-trim.png"
+                      alt="Illustration of a student thinking at a desk with a laptop, microscope, and books"
+                      width={2593}
+                      height={1490}
+                      className="w-full h-auto block"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.education.bg} 0%, transparent 100%)` }} />
                   </div>
                 </Panel>
               </div>
@@ -408,15 +409,6 @@ export default function DesignK() {
               <div id="research">
                 <Label color={TINTS.research.accent}>◈ RESEARCH</Label>
                 <Panel tint={TINTS.research} className="!p-0 overflow-hidden">
-                  <div className="border-b" style={{ borderColor: TINTS.research.border, background: "#fbfcfd" }}>
-                    <Image
-                      src="/images/research-banner-trim.png"
-                      alt="Illustration of a person thinking at a desk with a laptop, microscope, and a question mark"
-                      width={2477}
-                      height={1581}
-                      className="w-full h-auto"
-                    />
-                  </div>
                   <div className="flex flex-col divide-y p-5 sm:p-6" style={{ borderColor: TINTS.research.border }}>
                     {RESEARCH_PAPERS.map((c) => (
                       <Link key={c.n} href={c.href} className="grid sm:grid-cols-[auto_auto_1fr_auto] gap-4 items-start py-5 first:pt-0 last:pb-0 group">
@@ -446,6 +438,16 @@ export default function DesignK() {
                         </div>
                       </Link>
                     ))}
+                  </div>
+                  <div className="relative">
+                    <Image
+                      src="/images/research-banner-trim.png"
+                      alt="Illustration of a person thinking at a desk with a laptop, microscope, and a question mark"
+                      width={2477}
+                      height={1581}
+                      className="w-full h-auto block"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.research.bg} 0%, transparent 100%)` }} />
                   </div>
                 </Panel>
               </div>
