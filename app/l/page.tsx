@@ -187,7 +187,7 @@ export default function DesignK() {
                       alt="Illustration of a student thinking at a desk with a laptop, microscope, and books"
                       width={2593}
                       height={1490}
-                      className="w-full h-[260px] object-cover object-[50%_25%] block"
+                      className="w-full h-[300px] object-cover object-[50%_25%] block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.education.bg} 0%, transparent 100%)` }} />
                   </div>
@@ -445,7 +445,7 @@ export default function DesignK() {
                       alt="Illustration of a person thinking at a laptop with a question mark"
                       width={2129}
                       height={1489}
-                      className="w-full h-[260px] object-cover object-[50%_20%] block"
+                      className="w-full h-[300px] object-cover object-[50%_20%] block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.research.bg} 0%, transparent 100%)` }} />
                   </div>
