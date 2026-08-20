@@ -120,6 +120,7 @@ export default function DesignK() {
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
             {/* Hero — new tighter/bigger crop, gradient re-matched to this image's exact background color and position */}
+            <Label color={GREEN}>◉ WHO_I_AM</Label>
             <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
               <div
                 className="absolute inset-0"
