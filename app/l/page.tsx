@@ -119,7 +119,7 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — white panel transitions into the picture's own blue, image size is fixed so it can't grow with the text */}
+            {/* Hero — transparent-background character, no seam possible; gradient is purely decorative now */}
             <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
               <div
                 className="absolute inset-0"
@@ -127,12 +127,12 @@ export default function DesignK() {
               />
               <div className="absolute right-0 top-0 bottom-0 flex items-center">
                 <Image
-                  src="/images/hero-character-cropped.jpg"
+                  src="/images/hero-character-transparent.png"
                   alt="Illustration of a student sitting cross-legged with a laptop"
-                  width={1111}
-                  height={958}
+                  width={1440}
+                  height={1080}
                   priority
-                  sizes="(max-width: 1024px) 60vw, 400px"
+                  sizes="(max-width: 1024px) 60vw, 450px"
                   className="h-[300px] sm:h-[340px] w-auto object-contain"
                 />
               </div>
