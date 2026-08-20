@@ -136,7 +136,7 @@ export default function DesignK() {
                   className="h-[308px] sm:h-[335px] w-auto object-contain"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[205px] sm:max-w-[220px] min-h-[440px] sm:min-h-[478px]">
+              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[160px] sm:max-w-[170px] min-h-[440px] sm:min-h-[478px]">
                 <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
                 <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                 <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
