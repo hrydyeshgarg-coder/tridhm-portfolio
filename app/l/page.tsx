@@ -161,29 +161,33 @@ export default function DesignK() {
             <Reveal>
               <div id="education">
                 <Label color={TINTS.education.accent}>▤ EDUCATION</Label>
-                <Panel tint={TINTS.education}>
-                  <div className="grid sm:grid-cols-[1fr_auto] gap-5 items-start">
-                    <div>
-                      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
-                        <h4 className="text-[14px] font-semibold flex items-center gap-2">
-                          <span className="w-6 h-6 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: TINTS.education.border }}>
-                            <Image src="/images/logo-fmhs.png" alt="" width={24} height={24} className="w-full h-full object-contain" />
-                          </span>
-                          Flower Mound High School
-                        </h4>
-                        <span className="text-[11px] opacity-55">Aug 2023 – May 2027</span>
-                      </div>
-                      <p className="text-[12px] opacity-70 mb-4">
-                        <Counter value={4.575} decimals={3} /> weighted GPA · <Counter value={17} /> AP courses
-                      </p>
-                      <div className="flex flex-wrap gap-1.5">
-                        {AP_COURSES.map((c) => (
-                          <span key={c} className="text-[9.5px] px-2 py-1 rounded" style={{ background: "rgba(71,85,105,0.1)", color: TINTS.education.accent }}>AP {c}</span>
-                        ))}
-                      </div>
+                <Panel tint={TINTS.education} className="!p-0 overflow-hidden">
+                  <div className="border-b" style={{ borderColor: TINTS.education.border, background: "#fbfcfd" }}>
+                    <Image
+                      src="/images/education-desk-trim.png"
+                      alt="Illustration of a student thinking at a desk with a laptop, microscope, and books"
+                      width={2593}
+                      height={1490}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
+                      <h4 className="text-[14px] font-semibold flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: TINTS.education.border }}>
+                          <Image src="/images/logo-fmhs.png" alt="" width={24} height={24} className="w-full h-full object-contain" />
+                        </span>
+                        Flower Mound High School
+                      </h4>
+                      <span className="text-[11px] opacity-55">Aug 2023 – May 2027</span>
                     </div>
-                    <div className="w-24 sm:w-28 shrink-0 rounded-md overflow-hidden border mx-auto sm:mx-0" style={{ borderColor: TINTS.education.border, background: "#e8f1ee" }}>
-                      <Image src="/images/student-2.png" alt="" width={200} height={200} className="w-full h-auto" />
+                    <p className="text-[12px] opacity-70 mb-4">
+                      <Counter value={4.575} decimals={3} /> weighted GPA · <Counter value={17} /> AP courses
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {AP_COURSES.map((c) => (
+                        <span key={c} className="text-[9.5px] px-2 py-1 rounded" style={{ background: "rgba(71,85,105,0.1)", color: TINTS.education.accent }}>AP {c}</span>
+                      ))}
                     </div>
                   </div>
                 </Panel>
