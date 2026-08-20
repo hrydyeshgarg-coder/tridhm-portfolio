@@ -119,8 +119,8 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — transparent-background character, no seam possible; gradient is purely decorative now */}
-            <Panel className="relative overflow-hidden !p-0 min-h-[460px] sm:min-h-[500px]">
+            {/* Hero — transparent-background character, no seam possible; height matched to Software Creation panel */}
+            <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
               <div
                 className="absolute inset-0"
                 style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 24%, #a5bfd6 37%, #a5bfd6 100%)" }}
@@ -132,11 +132,11 @@ export default function DesignK() {
                   width={1440}
                   height={1080}
                   priority
-                  sizes="(max-width: 1024px) 60vw, 450px"
-                  className="h-[300px] sm:h-[340px] w-auto object-contain"
+                  sizes="(max-width: 1024px) 60vw, 480px"
+                  className="h-[330px] sm:h-[375px] w-auto object-contain"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[210px] sm:max-w-[225px] min-h-[460px] sm:min-h-[500px]">
+              <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[210px] sm:max-w-[225px] min-h-[440px] sm:min-h-[478px]">
                 <p className="text-[11px] opacity-45 mb-1">&gt; INITIALIZING_PORTFOLIO.EXE</p>
                 <p className="text-[11px] mb-6 font-semibold" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                 <h1 className="text-2xl sm:text-[28px] font-bold leading-[1.15] mb-4">
@@ -366,7 +366,7 @@ export default function DesignK() {
             <Reveal>
               <div id="software">
                 <Label color={TINTS.software.accent}>▣ SOFTWARE_CREATION</Label>
-                <Panel tint={TINTS.software}>
+                <Panel tint={TINTS.software} className="min-h-[440px] sm:min-h-[478px] flex flex-col">
                   <Link href="/l/engineering/dfw-community-hub" className="block group mb-4">
                     <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70 flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: TINTS.software.border }}>
