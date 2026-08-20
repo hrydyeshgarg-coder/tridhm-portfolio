@@ -2,6 +2,7 @@ import { Inter, Fraunces } from "next/font/google";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { HeroIllustration, ResearchIllustration, WritingIllustration, EngineeringIllustration } from "@/components/JIllustrations";
+import { GradCapArt } from "@/components/StudentArt";
 
 const inter = Inter({ subsets: ["latin"] });
 const display = Fraunces({ subsets: ["latin"], weight: ["700", "900"] });
@@ -12,10 +13,18 @@ const INK = "#1a1a1a";
 const MUTED = "rgba(26,26,26,0.6)";
 
 const NAV = [
+  { href: "#education", label: "Education" },
   { href: "#research", label: "Research" },
   { href: "#writing", label: "Writing" },
   { href: "#engineering", label: "Engineering" },
   { href: "#service", label: "Service" },
+];
+
+const AP_COURSES = [
+  "Pre-Calculus", "Calculus AB", "Calculus BC", "Statistics", "Biology", "Chemistry",
+  "Physics 1", "Computer Science", "Psychology", "Human Geography", "World History",
+  "US History", "European History", "US Government", "Macroeconomics",
+  "English Language & Composition", "English Literature & Composition",
 ];
 
 const RESEARCH = [
@@ -45,11 +54,15 @@ const RESEARCH = [
   },
 ];
 
-const SERVICE = [
+const COMMUNITY_SERVICE = [
   { org: "Roar 4 Change — Shelter Coordinator", date: "Jul 2023 – Dec 2025", featured: true, desc: "2.5 years supporting homeless shelters across multiple DFW cities." },
+];
+
+const LEADERSHIP = [
   { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive leadership and communication program." },
   { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and county archive research." },
   { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, goal-setting." },
+  { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events." },
 ];
 
 const CREDENTIALS = [
@@ -59,8 +72,13 @@ const CREDENTIALS = [
 ];
 
 const CLUBS = ["Model UN", "FMHS Computer Science Club", "FMHS STEM Club", "Schoolhouse Dialogues", "FMHS Band"];
-const BOOTCAMPS = ["UT Dallas AI Deep Dive", "Houston–Victoria Data Science Bootcamp", "Coding School AI & Big Data Camp", "Code2College"];
-const AWARDS = ["National Honor Society", "AP Scholar with Distinction", "Jammin' Jags (×2)"];
+const TRAININGS = ["UT Dallas AI Deep Dive (2025)", "Code2College (2026–Present)"];
+const BOOTCAMPS = ["Houston–Victoria Data Science Bootcamp (2024)", "Coding School AI & Big Data Camp (2024)"];
+const AWARDS = [
+  { label: "National Honor Society", date: "2026" },
+  { label: "AP Scholar with Distinction", date: "2025 & 2026" },
+  { label: "Jammin' Jags — Teacher Nomination", date: "2024 & 2025" },
+];
 
 export default function DesignJ() {
   return (
@@ -121,6 +139,28 @@ export default function DesignJ() {
               {c.label}
             </a>
           ))}
+        </div>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="max-w-[1200px] mx-auto px-6 sm:px-10 py-16 sm:py-20">
+        <p className="text-[13px] tracking-[0.15em] uppercase font-black mb-8" style={{ color: RED }}>Education</p>
+        <div className="rounded-2xl p-7 sm:p-9 grid sm:grid-cols-[auto_1fr] gap-8 items-start" style={{ background: "#ffffff", border: "2px solid rgba(26,26,26,0.08)" }}>
+          <div className="w-20 h-20 shrink-0 hidden sm:block">
+            <GradCapArt color={RED} />
+          </div>
+          <div>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold">Flower Mound High School</h3>
+              <span className="text-[13px] opacity-50">Aug 2023 – May 2027</span>
+            </div>
+            <p className="text-[14px] mb-5" style={{ color: MUTED }}>4.575 weighted GPA · 17 AP courses</p>
+            <div className="flex flex-wrap gap-2">
+              {AP_COURSES.map((c) => (
+                <span key={c} className="text-[12px] px-2.5 py-1 rounded-full" style={{ background: "rgba(192,41,47,0.08)", color: RED }}>AP {c}</span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -201,36 +241,35 @@ export default function DesignJ() {
         </div>
       </section>
 
-      {/* Service & Leadership */}
+      {/* Community Service & Leadership */}
       <section id="service" className="py-16 sm:py-20" style={{ background: "#ffffff" }}>
         <div className="max-w-[1200px] mx-auto px-6 sm:px-10">
-          <p className="text-[13px] tracking-[0.15em] uppercase font-black mb-4" style={{ color: RED }}>Leadership &amp; Service</p>
-          <h2 className={`${display.className} font-black leading-[1.1] mb-10`} style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)" }}>
-            Showing up, consistently.
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-5">
-            {SERVICE.map((s) => (
-              <div
-                key={s.org}
-                className="rounded-2xl p-6"
-                style={{
-                  background: s.featured ? RED : CREAM,
-                  color: s.featured ? "#fff" : INK,
-                }}
-              >
-                <div className="flex items-baseline justify-between gap-3 mb-2">
-                  <h4 className="font-bold text-[15px]">{s.org}</h4>
-                </div>
+          <p className="text-[13px] tracking-[0.15em] uppercase font-black mb-4" style={{ color: RED }}>Community Service</p>
+          <div className="grid sm:grid-cols-2 gap-5 mb-16">
+            {COMMUNITY_SERVICE.map((s) => (
+              <div key={s.org} className="rounded-2xl p-6" style={{ background: RED, color: "#fff" }}>
+                <h4 className="font-bold text-[15px] mb-2">{s.org}</h4>
                 <p className="text-[12px] font-semibold opacity-70 mb-2">{s.date}</p>
                 <p className="text-[13.5px] leading-relaxed opacity-90">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[13px] tracking-[0.15em] uppercase font-black mb-4" style={{ color: RED }}>Leadership</p>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {LEADERSHIP.map((s) => (
+              <div key={s.org} className="rounded-2xl p-6" style={{ background: CREAM, border: "2px solid rgba(26,26,26,0.08)" }}>
+                <h4 className="font-bold text-[15px] mb-2">{s.org}</h4>
+                <p className="text-[12px] font-semibold opacity-60 mb-2">{s.date}</p>
+                <p className="text-[13.5px] leading-relaxed" style={{ color: MUTED }}>{s.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Clubs / Bootcamps / Awards strip */}
-      <section className="max-w-[1200px] mx-auto px-6 sm:px-10 py-16 sm:py-20 grid sm:grid-cols-3 gap-8">
+      {/* Clubs / Trainings / Bootcamps / Awards strip */}
+      <section className="max-w-[1200px] mx-auto px-6 sm:px-10 py-16 sm:py-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <p className="text-[12px] tracking-[0.15em] uppercase font-black mb-5" style={{ color: RED }}>Clubs</p>
           <div className="flex flex-col gap-2">
@@ -238,7 +277,13 @@ export default function DesignJ() {
           </div>
         </div>
         <div>
-          <p className="text-[12px] tracking-[0.15em] uppercase font-black mb-5" style={{ color: RED }}>Bootcamps &amp; Training</p>
+          <p className="text-[12px] tracking-[0.15em] uppercase font-black mb-5" style={{ color: RED }}>Trainings</p>
+          <div className="flex flex-col gap-2">
+            {TRAININGS.map((c) => <p key={c} className="text-[14px]" style={{ color: MUTED }}>{c}</p>)}
+          </div>
+        </div>
+        <div>
+          <p className="text-[12px] tracking-[0.15em] uppercase font-black mb-5" style={{ color: RED }}>Bootcamps</p>
           <div className="flex flex-col gap-2">
             {BOOTCAMPS.map((c) => <p key={c} className="text-[14px]" style={{ color: MUTED }}>{c}</p>)}
           </div>
@@ -246,7 +291,11 @@ export default function DesignJ() {
         <div>
           <p className="text-[12px] tracking-[0.15em] uppercase font-black mb-5" style={{ color: RED }}>Awards</p>
           <div className="flex flex-col gap-2">
-            {AWARDS.map((c) => <p key={c} className="text-[14px]" style={{ color: MUTED }}>{c}</p>)}
+            {AWARDS.map((a) => (
+              <p key={a.label} className="text-[14px]" style={{ color: MUTED }}>
+                {a.label} <span className="opacity-60">({a.date})</span>
+              </p>
+            ))}
           </div>
         </div>
       </section>

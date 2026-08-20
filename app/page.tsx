@@ -1,6 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import { ExternalLink, Sparkle } from "lucide-react";
+import { GradCapArt, BookStackArt } from "@/components/StudentArt";
 
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -35,6 +36,13 @@ function Label({ children }: { children: React.ReactNode }) {
   );
 }
 
+const AP_COURSES = [
+  "Pre-Calculus", "Calculus AB", "Calculus BC", "Statistics", "Biology", "Chemistry",
+  "Physics 1", "Computer Science", "Psychology", "Human Geography", "World History",
+  "US History", "European History", "US Government", "Macroeconomics",
+  "English Language & Composition", "English Literature & Composition",
+];
+
 const WORK = [
   {
     n: "01",
@@ -56,6 +64,15 @@ const WORK = [
   },
   {
     n: "03",
+    tag: "IEEE PAPER",
+    title: "Federated Intrusion Detection",
+    desc: "Privacy-preserving federated learning for network security.",
+    tags: ["Python", "Federated Learning"],
+    mock: "grid",
+    href: "/research/federated-intrusion-detection",
+  },
+  {
+    n: "04",
     tag: "LIVE SITE",
     title: "DFW Community Hub",
     desc: "Civic platform live for the whole DFW metro.",
@@ -86,6 +103,15 @@ const CASE_STUDIES = [
   },
   {
     n: "03",
+    title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection",
+    desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.",
+    tags: ["CONIT 2026", "IEEE"],
+    resultA: ["99.68%", "Accuracy"],
+    resultB: ["99.76%", "Cross-Val"],
+    href: "/research/federated-intrusion-detection",
+  },
+  {
+    n: "04",
     title: "DFW Community Hub",
     desc: "A civic platform for the DFW metroplex — issue reporting, family support listings, and public resources, live for real residents.",
     tags: ["Live Production", "2026"],
@@ -94,7 +120,7 @@ const CASE_STUDIES = [
     href: "/engineering/dfw-community-hub",
   },
   {
-    n: "04",
+    n: "05",
     title: "Abandoned and Left Behind",
     desc: "A 165-page self-published action-adventure novel set in 1969 — two men racing the FBI to find their way home. A second manuscript, Hell on Planet B, was completed in 2024 and is not yet published.",
     tags: ["Amazon", "Published 2024"],
@@ -125,35 +151,38 @@ const SOURCES = [
   { label: "DFW Community Hub", href: "https://www.dfwcomp.org" },
 ];
 
-const SERVICE = [
+const COMMUNITY_SERVICE = [
   {
     org: "Roar 4 Change — Shelter Coordinator",
     date: "Jul 2023 – Dec 2025",
     featured: true,
     desc: "2.5 years supporting homeless shelters across multiple DFW cities — intake, supplies, and resident support.",
   },
-  {
-    org: "Denton County Junior Historians",
-    date: "Sep 2025 – May 2027",
-    desc: "Curated museum exhibits and researched county archives.",
-  },
-  {
-    org: "Rotary Youth Leadership Awards",
-    date: "Jun 2026",
-    desc: "Intensive week-long leadership and communication program.",
-  },
-  {
-    org: "Flower Mound Leadership Program",
-    date: "Aug 2026 – Apr 2027",
-    desc: "Team management, accountability, and goal-setting.",
-  },
 ];
 
-const ACTIVITIES = ["Model UN", "FMHS Computer Science Club", "Schoolhouse Dialogues", "FMHS Band"];
+const LEADERSHIP = [
+  { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program." },
+  { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives." },
+  { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting." },
+  { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events, including the Flower Mound Showdown." },
+];
+
+const TRAININGS = [
+  { org: "UT Dallas K-12 Outreach — AI Deep Dive", date: "Jun – Aug 2025", desc: "8-week program — neural networks, CNNs, greedy algorithms, trained in PyTorch, Pandas, NumPy, scikit-learn." },
+  { org: "Code2College", date: "Jun 2026 – Present", desc: "Self-paced Python course — three independent projects completed." },
+];
+
+const BOOTCAMPS = [
+  { org: "University of Houston–Victoria Data Science Bootcamp", date: "Jun 2024", desc: "CNNs, deep neural networks, NLP, computer vision, and Big Data fundamentals." },
+  { org: "The Coding School — AI & Big Data Camp", date: "Jul 2024", desc: "Applied scikit-learn and foundational AI modeling techniques." },
+];
+
+const ACTIVITIES = ["Model UN", "FMHS Computer Science Club", "FMHS STEM Club", "Schoolhouse Dialogues", "FMHS Band"];
 
 const ACHIEVEMENTS = [
   { label: "National Honor Society", date: "2026" },
   { label: "AP Scholar with Distinction", date: "2025 & 2026" },
+  { label: "Jammin' Jags — Teacher Nomination", date: "2024 & 2025" },
 ];
 
 function MockPreview({ type }: { type: string }) {
@@ -208,6 +237,7 @@ export default function Home() {
             <span className="text-[11px] opacity-40 hidden sm:inline">AI_RESEARCHER · AUTHOR</span>
           </div>
           <div className="flex gap-5 sm:gap-6 text-[11px] sm:text-[12px] opacity-60">
+            <a href="#education" className="hover:opacity-100">EDUCATION</a>
             <a href="#research" className="hover:opacity-100" style={{ color: GREEN }}>RESEARCH</a>
             <a href="#writing" className="hover:opacity-100">WRITING</a>
             <a href="#service" className="hover:opacity-100">SERVICE</a>
@@ -244,8 +274,9 @@ export default function Home() {
                     </a>
                     <Link
                       href="/writing/abandoned-and-left-behind"
-                      className="text-[12px] font-semibold px-4 py-2 rounded border border-white/15 opacity-70"
+                      className="flex items-center gap-2 text-[12px] font-semibold px-4 py-2 rounded border border-white/15 opacity-70"
                     >
+                      <span className="w-4 h-4 shrink-0"><BookStackArt color="#e8eaed" /></span>
                       READ_NOVEL
                     </Link>
                   </div>
@@ -270,10 +301,34 @@ export default function Home() {
               </div>
             </Panel>
 
+            {/* Education */}
+            <div id="education">
+              <Label>// EDUCATION</Label>
+              <Panel>
+                <div className="grid sm:grid-cols-[auto_1fr] gap-5">
+                  <div className="w-16 h-16 shrink-0 opacity-90 hidden sm:block">
+                    <GradCapArt />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
+                      <h4 className="text-[13px] font-semibold">Flower Mound High School</h4>
+                      <span className="text-[10px] opacity-45">Aug 2023 – May 2027</span>
+                    </div>
+                    <p className="text-[11px] opacity-55 mb-4">4.575 weighted GPA · 17 AP courses</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {AP_COURSES.map((c) => (
+                        <span key={c} className="text-[9px] px-1.5 py-0.5 rounded bg-white/5 opacity-60">AP {c}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Panel>
+            </div>
+
             {/* Selected work row */}
             <div id="engineering">
               <Label>// SELECTED_WORK</Label>
-              <div className="grid sm:grid-cols-3 gap-3">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 {WORK.map((w) => (
                   <Link key={w.n} href={w.href} className="block">
                     <Panel className="!p-4 h-full transition-colors hover:!border-[#3ddc8455]">
@@ -301,20 +356,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Leadership & service log */}
-            <div id="service">
-              <Label>// LEADERSHIP_&amp;_SERVICE</Label>
+            {/* Community Service */}
+            <div>
+              <Label>// COMMUNITY_SERVICE</Label>
               <Panel className="!p-0 overflow-hidden">
                 <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
-                  {SERVICE.map((s) => (
-                    <div
-                      key={s.org}
-                      className="p-4 sm:p-5"
-                      style={{
-                        borderColor: BORDER,
-                        background: s.featured ? `${GREEN}0a` : "transparent",
-                      }}
-                    >
+                  {COMMUNITY_SERVICE.map((s) => (
+                    <div key={s.org} className="p-4 sm:p-5" style={{ background: `${GREEN}0a` }}>
                       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
                         <h4 className="text-[13px] font-semibold">{s.org}</h4>
                         <span className="text-[10px] opacity-40 shrink-0">{s.date}</span>
@@ -324,6 +372,56 @@ export default function Home() {
                   ))}
                 </div>
               </Panel>
+            </div>
+
+            {/* Leadership */}
+            <div id="service">
+              <Label>// LEADERSHIP</Label>
+              <Panel className="!p-0 overflow-hidden">
+                <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
+                  {LEADERSHIP.map((s) => (
+                    <div key={s.org} className="p-4 sm:p-5">
+                      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
+                        <h4 className="text-[13px] font-semibold">{s.org}</h4>
+                        <span className="text-[10px] opacity-40 shrink-0">{s.date}</span>
+                      </div>
+                      <p className="text-[11.5px] opacity-55 leading-relaxed">{s.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </Panel>
+            </div>
+
+            {/* Trainings + Bootcamps */}
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <Label>// TRAININGS</Label>
+                <Panel className="!p-0 overflow-hidden">
+                  <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
+                    {TRAININGS.map((s) => (
+                      <div key={s.org} className="p-4">
+                        <h4 className="text-[12px] font-semibold mb-1">{s.org}</h4>
+                        <p className="text-[10px] opacity-40 mb-1.5">{s.date}</p>
+                        <p className="text-[10.5px] opacity-55 leading-relaxed">{s.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+              </div>
+              <div>
+                <Label>// BOOTCAMPS</Label>
+                <Panel className="!p-0 overflow-hidden">
+                  <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
+                    {BOOTCAMPS.map((s) => (
+                      <div key={s.org} className="p-4">
+                        <h4 className="text-[12px] font-semibold mb-1">{s.org}</h4>
+                        <p className="text-[10px] opacity-40 mb-1.5">{s.date}</p>
+                        <p className="text-[10.5px] opacity-55 leading-relaxed">{s.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </Panel>
+              </div>
             </div>
 
             {/* Bottom row: log + stack */}
@@ -338,6 +436,8 @@ export default function Home() {
                   [2025] Published second IEEE paper.
                   <br />
                   [2026] Shipped dfwcomp.org.
+                  <br />
+                  [2026] Published third IEEE paper.
                 </p>
               </Panel>
               <Panel>
@@ -361,7 +461,7 @@ export default function Home() {
                 {CASE_STUDIES.map((c) => (
                   <Link
                     key={c.n}
-                    id={c.n === "04" ? "writing" : undefined}
+                    id={c.n === "05" ? "writing" : undefined}
                     href={c.href}
                     className="grid sm:grid-cols-[auto_1fr_auto] gap-4 items-start py-5 first:pt-0 last:pb-0 group"
                     style={{ borderColor: BORDER }}
@@ -448,7 +548,7 @@ export default function Home() {
             {/* Activities + Achievements */}
             <div className="grid sm:grid-cols-2 gap-4">
               <Panel>
-                <Label>* ACTIVITIES</Label>
+                <Label>* CLUBS_&amp;_ACTIVITIES</Label>
                 <div className="flex flex-wrap gap-2">
                   {ACTIVITIES.map((a) => (
                     <span key={a} className="text-[11px] px-2.5 py-1.5 rounded border border-white/10 opacity-70">
