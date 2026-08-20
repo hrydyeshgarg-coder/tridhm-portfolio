@@ -234,14 +234,6 @@ export default function DesignK() {
               <div>
                 <Label color={TINTS.service.accent}>♥ COMMUNITY_SERVICE</Label>
                 <Panel tint={TINTS.service} className="!p-0 overflow-hidden">
-                  <div className="grid grid-cols-2">
-                    <div className="overflow-hidden border-r" style={{ borderColor: TINTS.service.border }}>
-                      <Image src="/images/shelter-1.png" alt="" width={500} height={500} className="w-full h-24 sm:h-28 object-cover" />
-                    </div>
-                    <div className="overflow-hidden">
-                      <Image src="/images/shelter-2.png" alt="" width={500} height={500} className="w-full h-24 sm:h-28 object-cover" />
-                    </div>
-                  </div>
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.service.border }}>
                     {COMMUNITY_SERVICE.map((s) => (
                       <div key={s.org} className="p-4 sm:p-5 flex gap-4 items-start">
@@ -257,6 +249,16 @@ export default function DesignK() {
                         </div>
                       </div>
                     ))}
+                  </div>
+                  <div className="relative">
+                    <Image
+                      src="/images/service-banner.png"
+                      alt="Illustration of a teen volunteer handing out supplies at a community shelter"
+                      width={1456}
+                      height={816}
+                      className="w-full h-[275px] object-cover object-[50%_25%] block"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.service.bg} 0%, transparent 100%)` }} />
                   </div>
                 </Panel>
               </div>
