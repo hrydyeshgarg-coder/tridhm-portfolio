@@ -128,7 +128,7 @@ export default function DesignK() {
                     className="absolute inset-0"
                     style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a8c3d8 100%)" }}
                   />
-                  <div className="absolute right-0 top-0 bottom-0 flex items-end">
+                  <div className="absolute right-[70px] sm:right-[95px] top-0 bottom-0 flex items-end">
                     <Image
                       src="/images/whoiam-portrait-tight.png"
                       alt="Portrait of Tridhm Garg"
