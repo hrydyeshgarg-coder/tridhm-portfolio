@@ -505,8 +505,8 @@ export default function DesignK() {
                 <Label color={TINTS.writing.accent}>✎ WRITING</Label>
                 <Panel tint={TINTS.writing} className="!p-0 overflow-hidden">
                   <div className="p-5 sm:p-6">
-                    <div className="grid sm:grid-cols-[auto_1fr] gap-5">
-                      <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
+                    <div className="grid sm:grid-cols-[auto_1fr] gap-5 items-start">
+                      <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0 items-start">
                         <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
                           <Image src="/images/book1-cover-front.png" alt="Abandoned and Left Behind front cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
@@ -543,8 +543,8 @@ export default function DesignK() {
                       </div>
                     </div>
 
-                    <div className="mt-5 pt-5 border-t grid sm:grid-cols-[auto_1fr] gap-5" style={{ borderColor: TINTS.writing.border }}>
-                      <div className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
+                    <div className="mt-5 pt-5 border-t grid sm:grid-cols-[auto_1fr] gap-5 items-start" style={{ borderColor: TINTS.writing.border }}>
+                      <div className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0 items-start">
                         <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
                           <Image src="/images/hopb-cover-front.png" alt="Hell on Planet B front cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
