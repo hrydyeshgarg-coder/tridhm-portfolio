@@ -13,3 +13,14 @@ body {
   background: #3ddc84;
   color: #0a0c0f;
 }
+
+/* Design L: every clickable link shifts color on hover, not just opacity */
+.l-page a {
+  transition: color 0.18s ease, opacity 0.18s ease;
+}
+.l-page a:hover {
+  color: #0d9463 !important;
+}
+.l-page a:hover img {
+  filter: none;
+}

@@ -118,7 +118,7 @@ const LIFE_LESSONS = [
 
 export default function DesignK() {
   return (
-    <div className={`${mono.className} min-h-screen`} style={{ background: BG, color: INK }}>
+    <div className={`${mono.className} min-h-screen l-page`} style={{ background: BG, color: INK }}>
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 pt-6 pb-10">
         {/* Top nav */}
         <div className="flex items-center justify-between mb-4 px-1 flex-wrap gap-3">
