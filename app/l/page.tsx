@@ -493,11 +493,11 @@ export default function DesignK() {
                   <div className="p-5 sm:p-6">
                     <div className="grid sm:grid-cols-[auto_1fr] gap-5">
                       <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
-                        <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/book-cover-front.jpg" alt="Abandoned and Left Behind front cover" width={300} height={480} className="w-full h-auto" />
+                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book1-cover-front.png" alt="Abandoned and Left Behind front cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
                         </div>
-                        <div className="w-24 rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/book-cover-back.jpg" alt="Abandoned and Left Behind back cover" width={300} height={480} className="w-full h-auto" />
+                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book1-cover-back.png" alt="Abandoned and Left Behind back cover" width={1023} height={1537} className="w-full h-full object-cover object-top" />
                         </div>
                       </Link>
                       <div>
