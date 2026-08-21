@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Denton County Junior Historians — Tridhm Garg" };
 
@@ -18,6 +18,14 @@ export default function Page() {
         researches local landmarks, curates museum collections, and creates
         award-winning multimedia projects.
       </p>
+
+      <Figure
+        src="/images/denton-county-sign.png"
+        alt="Illustration of Tridhm at the Denton County courthouse, next to the Denton County Junior Historians sign"
+        width={1448}
+        height={1086}
+      />
+
       <p>
         Whether I am scriptwriting historical videos, handling archival materials, or
         volunteering at community heritage fairs, I am dedicated to making local
