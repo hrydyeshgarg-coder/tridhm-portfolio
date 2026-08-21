@@ -84,7 +84,7 @@ const COMMUNITY_SERVICE = [
 const LEADERSHIP = [
   { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program.", logo: "/images/logo-rotary.png", href: "/l/leadership/rotary-youth-leadership-awards" },
   { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives.", logo: "/images/logo-denton-county.jpg", href: "/l/leadership/denton-county-junior-historians" },
-  { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting.", logo: "/images/logo-student-leadership.png" },
+  { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting.", logo: "/images/logo-student-leadership.png", href: "/l/leadership/flower-mound-leadership-program" },
   { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events, including the Flower Mound Showdown.", logo: "/images/logo-fmhs.png" },
 ];
 const TRAININGS = [
