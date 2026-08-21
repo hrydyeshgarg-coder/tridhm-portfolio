@@ -89,7 +89,7 @@ const LEADERSHIP = [
 ];
 const TRAININGS = [
   { org: "UT Dallas K-12 Outreach — AI Deep Dive", date: "Jun – Aug 2025", desc: "8-week structured program — neural networks, CNNs, greedy algorithms, trained in PyTorch, Pandas, NumPy, scikit-learn.", logo: "/images/logo-utd.webp", href: "/l/trainings/ut-dallas-k12-ai-deep-dive" },
-  { org: "Code2College", date: "Jun 2026 – Present", desc: "Self-paced Python course — three independent projects completed.", logo: "/images/logo-code2college.png" },
+  { org: "Code2College", date: "Jun 2026 – Present", desc: "Self-paced Python course — three independent projects completed.", logo: "/images/logo-code2college.png", href: "/l/trainings/code2college" },
 ];
 const BOOTCAMPS = [
   { org: "University of Houston–Victoria Data Science Bootcamp", date: "Jun 2024", desc: "CNNs, deep neural networks, NLP, computer vision, and Big Data fundamentals in Python.", logo: "/images/logo-uhv.png" },
