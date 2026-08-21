@@ -83,7 +83,7 @@ const COMMUNITY_SERVICE = [
 ];
 const LEADERSHIP = [
   { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program.", logo: "/images/logo-rotary.png" },
-  { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives.", logo: "/images/logo-denton-county.jpg" },
+  { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives.", logo: "/images/logo-denton-county.jpg", href: "/l/leadership/denton-county-junior-historians" },
   { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting.", logo: "/images/logo-student-leadership.png" },
   { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events, including the Flower Mound Showdown.", logo: "/images/logo-fmhs.png" },
 ];
@@ -294,26 +294,37 @@ export default function DesignK() {
                 <Label color={TINTS.leadership.accent}>◆ LEADERSHIP</Label>
                 <Panel tint={TINTS.leadership} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.leadership.border }}>
-                    {LEADERSHIP.map((s) => (
-                      <div key={s.org} className="p-4 sm:p-5 flex gap-4 items-start">
-                        {s.logo ? (
-                          <div className="w-11 h-11 rounded-full overflow-hidden border shrink-0 bg-white flex items-center justify-center" style={{ borderColor: TINTS.leadership.border }}>
-                            <Image src={s.logo} alt="" width={44} height={44} className="w-full h-full object-contain p-1" />
+                    {LEADERSHIP.map((s) => {
+                      const rowContent = (
+                        <>
+                          {s.logo ? (
+                            <div className="w-11 h-11 rounded-full overflow-hidden border shrink-0 bg-white flex items-center justify-center" style={{ borderColor: TINTS.leadership.border }}>
+                              <Image src={s.logo} alt="" width={44} height={44} className="w-full h-full object-contain p-1" />
+                            </div>
+                          ) : (
+                            <div className="w-11 h-11 rounded-full shrink-0 flex items-center justify-center" style={{ background: `${TINTS.leadership.accent}18` }}>
+                              <span className="text-[13px] font-bold" style={{ color: TINTS.leadership.accent }}>◆</span>
+                            </div>
+                          )}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
+                              <h4 className="text-[13px] font-semibold">{s.org}</h4>
+                              <span className="text-[10px] opacity-50 shrink-0">{s.date}</span>
+                            </div>
+                            <p className="text-[11.5px] opacity-70 leading-relaxed">{s.desc}</p>
                           </div>
-                        ) : (
-                          <div className="w-11 h-11 rounded-full shrink-0 flex items-center justify-center" style={{ background: `${TINTS.leadership.accent}18` }}>
-                            <span className="text-[13px] font-bold" style={{ color: TINTS.leadership.accent }}>◆</span>
-                          </div>
-                        )}
-                        <div className="flex-1 min-w-0">
-                          <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
-                            <h4 className="text-[13px] font-semibold">{s.org}</h4>
-                            <span className="text-[10px] opacity-50 shrink-0">{s.date}</span>
-                          </div>
-                          <p className="text-[11.5px] opacity-70 leading-relaxed">{s.desc}</p>
+                        </>
+                      );
+                      return s.href ? (
+                        <Link key={s.org} href={s.href} className="p-4 sm:p-5 flex gap-4 items-start group hover:opacity-80">
+                          {rowContent}
+                        </Link>
+                      ) : (
+                        <div key={s.org} className="p-4 sm:p-5 flex gap-4 items-start">
+                          {rowContent}
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                   <div className="relative">
                     <Image
