@@ -507,11 +507,11 @@ export default function DesignK() {
                   <div className="p-5 sm:p-6">
                     <div className="grid sm:grid-cols-[auto_1fr] gap-5">
                       <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
-                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/book1-cover-front.png" alt="Abandoned and Left Behind front cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book1-cover-front.png" alt="Abandoned and Left Behind front cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
-                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/book1-cover-back.png" alt="Abandoned and Left Behind back cover" width={1023} height={1537} className="w-full h-full object-cover object-top" />
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/book1-cover-back.png" alt="Abandoned and Left Behind back cover" width={1023} height={1537} className="w-full h-auto object-contain" />
                         </div>
                       </Link>
                       <div>
@@ -545,11 +545,11 @@ export default function DesignK() {
 
                     <div className="mt-5 pt-5 border-t grid sm:grid-cols-[auto_1fr] gap-5" style={{ borderColor: TINTS.writing.border }}>
                       <div className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
-                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/hopb-cover-front.png" alt="Hell on Planet B front cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/hopb-cover-front.png" alt="Hell on Planet B front cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
-                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
-                          <Image src="/images/hopb-cover-back.png" alt="Hell on Planet B back cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
+                        <div className="w-24 rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/hopb-cover-back.png" alt="Hell on Planet B back cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
                       </div>
                       <div>
