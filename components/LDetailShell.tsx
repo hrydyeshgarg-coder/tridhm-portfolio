@@ -46,7 +46,7 @@ export function LDetailShell({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`${mono.className} min-h-screen`} style={{ background: BG, color: INK }}>
+    <div className={`${mono.className} min-h-screen l-page`} style={{ background: BG, color: INK }}>
       {heroImage && (
         <div className="w-full max-h-[380px] overflow-hidden border-b" style={{ borderColor: BORDER }}>
           <Image src={heroImage} alt={heroAlt ?? ""} width={1600} height={700} className="w-full h-[220px] sm:h-[340px] object-cover" priority />
