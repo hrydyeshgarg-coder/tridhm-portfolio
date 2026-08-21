@@ -54,8 +54,10 @@ const AP_COURSES = [
 const WORK = [
   { n: "01", tag: "IEEE PAPER", title: "Satellite Poverty CNN", desc: "CNN detecting poverty from satellite imagery.", tags: ["Python", "PyTorch", "CNN"], href: "/l/research/satellite-poverty-cnn" },
   { n: "02", tag: "IEEE PAPER", title: "LSTM Market Forecast", desc: "Dual LSTM networks forecasting stock highs/lows.", tags: ["Python", "LSTM", "Pandas"], href: "/l/research/lstm-market-forecast" },
-  { n: "03", tag: "LIVE SITE", title: "DFW Community Hub", desc: "Civic platform live for the whole DFW metro.", tags: ["Next.js", "FastAPI", "Supabase"], href: "/l/engineering/dfw-community-hub" },
-  { n: "04", tag: "SUBMITTED", title: "Depression Screening ML", desc: "XGBoost/ANN/RF binary depression classifier on DASS-42.", tags: ["Python", "XGBoost", "ANN"], href: "/l/research/depression-screening-dass42" },
+  { n: "03", tag: "IEEE PAPER", title: "Federated Intrusion Detection", desc: "Privacy-preserving federated learning for network intrusion detection.", tags: ["Python", "Federated Learning"], href: "/l/research/federated-intrusion-detection" },
+  { n: "04", tag: "LIVE SITE", title: "DFW Community Hub", desc: "Civic platform live for the whole DFW metro.", tags: ["Next.js", "FastAPI", "Supabase"], href: "/l/engineering/dfw-community-hub" },
+  { n: "05", tag: "SUBMITTED", title: "Depression Screening ML", desc: "XGBoost/ANN/RF binary depression classifier on DASS-42.", tags: ["Python", "XGBoost", "ANN"], href: "/l/research/depression-screening-dass42" },
+  { n: "06", tag: "PUBLISHED BOOK", title: "Abandoned and Left Behind", desc: "165-page action-adventure novel, self-published on Amazon.", tags: ["Amazon", "Fiction", "4.0★"], href: "/l/writing/abandoned-and-left-behind" },
 ];
 
 const RESEARCH_PAPERS = [
@@ -200,7 +202,7 @@ export default function DesignK() {
             <Reveal delay={80}>
               <div>
                 <Label>// SELECTED_WORK</Label>
-                <div className="grid sm:grid-cols-3 gap-3">
+                <div className="grid sm:grid-cols-2 gap-3">
                   {WORK.map((w) => (
                     <Link key={w.n} href={w.href} className="block">
                       <Panel className="!p-4 h-full hover:!border-[#0d946377]">
@@ -214,6 +216,10 @@ export default function DesignK() {
                             {w.tag === "LIVE SITE" && (
                               // eslint-disable-next-line @next/next/no-img-element
                               <img src="/images/logo-civichub.png" alt="" className="h-3 w-3 object-contain" />
+                            )}
+                            {w.tag === "PUBLISHED BOOK" && (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src="/images/logo-amazon.svg" alt="" className="h-2.5 w-auto" />
                             )}
                             {w.tag}
                           </span>
