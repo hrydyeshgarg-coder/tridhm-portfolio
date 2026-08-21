@@ -19,7 +19,6 @@ export default function Page() {
       <Figure
         src="/images/ryla-sign.png"
         alt="Illustration of Tridhm standing next to the RYLA (Rotary Youth Leadership Awards) sign"
-        caption="At the RYLA program in Denton, TX"
         width={1473}
         height={1068}
       />

@@ -14,11 +14,13 @@ const INK = "#14181c";
 
 export function Figure({
   src, alt, caption, width = 1000, height = 620,
-}: { src: string; alt: string; caption: string; width?: number; height?: number }) {
+}: { src: string; alt: string; caption?: string; width?: number; height?: number }) {
   return (
     <figure className="rounded-lg overflow-hidden border" style={{ borderColor: BORDER, background: PANEL }}>
       <Image src={src} alt={alt} width={width} height={height} className="w-full h-auto" />
-      <figcaption className="text-[11px] opacity-55 px-4 py-2.5 border-t" style={{ borderColor: BORDER }}>{caption}</figcaption>
+      {caption && (
+        <figcaption className="text-[11px] opacity-55 px-4 py-2.5 border-t" style={{ borderColor: BORDER }}>{caption}</figcaption>
+      )}
     </figure>
   );
 }
