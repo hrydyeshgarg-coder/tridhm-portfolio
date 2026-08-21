@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Flower Mound Leadership Program — Tridhm Garg" };
 
@@ -16,6 +16,14 @@ export default function Page() {
         advanced personal and professional growth initiative focused on long-term
         community impact.
       </p>
+
+      <Figure
+        src="/images/fm-leadership-sign.png"
+        alt="Illustration of Tridhm at a Flower Mound Leadership Program session"
+        width={1448}
+        height={1086}
+      />
+
       <p>
         Serving in an active role, I focus on developing essential organizational
         skills, including team management, team building, accountability, and
