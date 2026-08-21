@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Depression Screening ML — Tridhm Garg" };
 
@@ -9,6 +9,8 @@ export default function Page() {
       title="Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset"
       meta="Co-Author · Submitted for peer review"
       tags={["Python", "XGBoost", "Random Forest", "ANN", "Under Review"]}
+      heroImage="/images/depression-hero.png"
+      heroAlt="Illustration of mental health analytics using AI and machine learning"
     >
       <p>
         Identifying depression early can help ensure timely intervention and improved
@@ -21,6 +23,8 @@ export default function Page() {
         conditions: <strong>Random Forest</strong>, <strong>XGBoost</strong>, and an{" "}
         <strong>Artificial Neural Network (ANN)</strong>.
       </p>
+
+      <Figure src="/images/depression-infographic.png" alt="Infographic summarizing the dataset, methodology, model comparison, and impact of the depression classification study" caption="Study overview — dataset (3,730 balanced samples), methodology, model comparison, and real-world impact." width={1536} height={1024} />
 
       <div className="grid grid-cols-3 gap-3">
         <div className="rounded-lg border p-4" style={{ borderColor: "rgba(20,24,20,0.12)", background: "#ffffff" }}>
@@ -38,6 +42,11 @@ export default function Page() {
           <p className="text-[15px] font-bold">92.94%</p>
           <p className="text-[11px] opacity-60">Accuracy</p>
         </div>
+      </div>
+
+      <div className="grid sm:grid-cols-2 gap-3">
+        <Figure src="/images/depression-confusion-matrix.png" alt="Confusion matrices for XGBoost, ANN, and Random Forest" caption="Fig. 2 — confusion matrices for all three models on the held-out test set." width={532} height={694} />
+        <Figure src="/images/depression-learning-curve.png" alt="Accuracy and loss learning curves for the ANN across training epochs" caption="Fig. 3 — ANN accuracy/loss curves across training epochs, showing stable convergence." width={517} height={520} />
       </div>
 
       <p>
