@@ -508,12 +508,24 @@ export default function DesignK() {
                             racing the FBI to find their way home. 4.0★ on Amazon.
                           </p>
                         </Link>
-                        <p className="text-[11px] opacity-60 leading-relaxed mb-2">
+                        <p className="text-[11px] opacity-60 leading-relaxed mb-3">
                           &ldquo;His love for writing came from his tutoring teacher, Mrs. Murphy.
                           With the teacher&rsquo;s help, he has improved in his writing and editing.
                           His interest is to connect with new audiences and write more and more
                           novels on different genres.&rdquo;
                         </p>
+                        <a
+                          href="https://www.amazon.com/Abandoned-Left-Behind-action-adventure-novel/dp/B0D571N8TC"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded border"
+                          style={{ borderColor: TINTS.writing.border, color: TINTS.writing.accent }}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src="/images/logo-amazon.svg" alt="" className="h-3 w-auto" />
+                          Buy on Amazon
+                          <ExternalLink size={11} />
+                        </a>
                       </div>
                     </div>
 
@@ -523,16 +535,18 @@ export default function DesignK() {
                         <span className="text-[9px] px-1.5 py-0.5 rounded font-semibold uppercase tracking-wide" style={{ background: `${TINTS.writing.accent}18`, color: TINTS.writing.accent }}>Coming Soon</span>
                       </div>
                       <p className="text-[12px] opacity-70 leading-relaxed mb-3">
-                        A science-fiction war novel exploring the human consequences of conflict
-                        on another planet.
+                        A completed science-fiction war novel exploring the devastating
+                        consequences of conflict on another planet, following a man caught
+                        between the horrors of war and a deeply troubled family relationship.
+                        Coming soon on Amazon.
                       </p>
-                      <ul className="text-[11px] opacity-70 leading-relaxed list-disc pl-4 flex flex-col gap-1 mb-2">
-                        <li>Wrote and completed a science-fiction novel centered on an interplanetary war and its devastating consequences.</li>
-                        <li>Developed a complex plot about a man struggling with deep resentment toward his own family amid the chaos of war.</li>
-                        <li>Explored themes of war, family, hatred, survival, and the psychological effects of violence.</li>
-                        <li>Independently brainstormed, drafted, edited, and completed the manuscript.</li>
-                      </ul>
-                      <p className="text-[11px] opacity-55">Coming soon on Amazon.</p>
+                      <p className="text-[11px] opacity-60 leading-relaxed">
+                        &ldquo;After completing his first novel, he continued writing
+                        independently, challenging himself to explore a new genre and a darker
+                        story. Hell on Planet B reflects his growing interest in exploring
+                        complex themes of war, family, survival, and human nature while
+                        connecting with new audiences through fiction.&rdquo;
+                      </p>
                     </div>
                   </div>
                   <div className="relative">
