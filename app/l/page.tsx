@@ -529,7 +529,16 @@ export default function DesignK() {
                       </div>
                     </div>
 
-                    <div className="mt-5 pt-5 border-t" style={{ borderColor: TINTS.writing.border }}>
+                    <div className="mt-5 pt-5 border-t grid sm:grid-cols-[auto_1fr] gap-5" style={{ borderColor: TINTS.writing.border }}>
+                      <div className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0">
+                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/hopb-cover-front.png" alt="Hell on Planet B front cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
+                        </div>
+                        <div className="w-24 aspect-[2/3] rounded-md overflow-hidden border shadow-sm hidden sm:block" style={{ borderColor: TINTS.writing.border }}>
+                          <Image src="/images/hopb-cover-back.png" alt="Hell on Planet B back cover" width={1024} height={1536} className="w-full h-full object-cover object-top" />
+                        </div>
+                      </div>
+                      <div>
                       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
                         <h4 className="text-[14px] font-semibold">Hell on Planet B</h4>
                         <span className="text-[9px] px-1.5 py-0.5 rounded font-semibold uppercase tracking-wide" style={{ background: `${TINTS.writing.accent}18`, color: TINTS.writing.accent }}>Coming Soon</span>
@@ -547,6 +556,7 @@ export default function DesignK() {
                         complex themes of war, family, survival, and human nature while
                         connecting with new audiences through fiction.&rdquo;
                       </p>
+                      </div>
                     </div>
                   </div>
                   <div className="relative">
