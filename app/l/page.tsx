@@ -99,6 +99,11 @@ const AWARDS = [
   { label: "AP Scholar with Distinction", date: "2025 & 2026" },
   { label: "Jammin' Jags — Teacher Nomination", date: "2024 & 2025" },
 ];
+const INTERESTS = [
+  "AI for social good", "Mental health & wellbeing", "Civic technology",
+  "Historical fiction & sci-fi", "Federated & privacy-preserving ML",
+  "Financial modeling", "Community organizing",
+];
 
 export default function DesignK() {
   return (
@@ -669,6 +674,19 @@ export default function DesignK() {
                     </div>
                   </Panel>
                 </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={150}>
+              <div>
+                <Label>◎ INTERESTED_IN</Label>
+                <Panel>
+                  <div className="flex flex-wrap gap-2">
+                    {INTERESTS.map((i) => (
+                      <span key={i} className="text-[11px] px-2.5 py-1.5 rounded border" style={{ borderColor: BORDER, background: "rgba(13,148,99,0.06)", color: INK }}>{i}</span>
+                    ))}
+                  </div>
+                </Panel>
               </div>
             </Reveal>
 
