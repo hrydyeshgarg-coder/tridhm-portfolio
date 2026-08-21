@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Flower Mound High School Student Council — Tridhm Garg" };
 
@@ -17,6 +17,14 @@ export default function Page() {
         campus community. I attend weekly meetings to brainstorm, pitch, and organize
         campus activities.
       </p>
+
+      <Figure
+        src="/images/fm-student-council-sign.png"
+        alt="Illustration of Tridhm at Flower Mound High School, next to the Student Council sign"
+        width={1448}
+        height={1086}
+      />
+
       <p>
         My active contributions include designing and setting up decorations for the
         Flower Mound 9 campus during the high-energy Flower Mound Showdown week, as
