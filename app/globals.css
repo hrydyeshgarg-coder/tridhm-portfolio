@@ -24,3 +24,8 @@ body {
 .l-page a:hover img {
   filter: none;
 }
+
+/* Design L: anchor-link targets shouldn't land underneath the sticky nav */
+.l-page [id] {
+  scroll-margin-top: 76px;
+}

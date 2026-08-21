@@ -2,6 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import { BackToTop } from "@/components/BackToTop";
 
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -47,19 +48,24 @@ export function LDetailShell({
 }) {
   return (
     <div className={`${mono.className} min-h-screen l-page`} style={{ background: BG, color: INK }}>
+      {/* Sticky mini-nav — always reachable, no need to scroll back up manually */}
+      <div className="sticky top-0 z-40 backdrop-blur-md border-b" style={{ background: "rgba(244,245,243,0.9)", borderColor: BORDER }}>
+        <div className="max-w-[780px] mx-auto px-5 sm:px-6 py-3">
+          <Link
+            href="/l"
+            className="inline-flex items-center gap-2 text-[12px] opacity-60 hover:opacity-100"
+          >
+            <ArrowLeft size={13} /> back_to_portfolio
+          </Link>
+        </div>
+      </div>
+
       {heroImage && (
         <div className="w-full max-h-[380px] overflow-hidden border-b" style={{ borderColor: BORDER }}>
           <Image src={heroImage} alt={heroAlt ?? ""} width={1600} height={700} className="w-full h-[220px] sm:h-[340px] object-cover" priority />
         </div>
       )}
       <div className="max-w-[780px] mx-auto px-5 sm:px-6 pt-8 pb-24">
-        <Link
-          href="/l"
-          className="inline-flex items-center gap-2 text-[12px] opacity-50 hover:opacity-80 mb-10"
-        >
-          <ArrowLeft size={13} /> back_to_portfolio
-        </Link>
-
         <p className="text-[11px] tracking-[0.15em] uppercase mb-3 font-semibold" style={{ color: GREEN }}>
           {eyebrow}
         </p>
@@ -114,6 +120,7 @@ export function LDetailShell({
           </div>
         )}
       </div>
+      <BackToTop color={GREEN} />
     </div>
   );
 }

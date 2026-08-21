@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ExternalLink, Sparkle } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { Counter } from "@/components/Counter";
+import { BackToTop } from "@/components/BackToTop";
 
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -119,22 +120,26 @@ const LIFE_LESSONS = [
 export default function DesignK() {
   return (
     <div className={`${mono.className} min-h-screen l-page`} style={{ background: BG, color: INK }}>
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 pt-6 pb-10">
-        {/* Top nav */}
-        <div className="flex items-center justify-between mb-4 px-1 flex-wrap gap-3">
-          <div className="flex items-center gap-2.5">
+      {/* Top nav — sticky, stays visible while scrolling */}
+      <div className="sticky top-0 z-40 backdrop-blur-md border-b" style={{ background: "rgba(244,245,243,0.9)", borderColor: BORDER }}>
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-wrap gap-3">
+          <Link href="/l" className="flex items-center gap-2.5">
             <div className="w-7 h-7 rounded flex items-center justify-center font-bold text-xs" style={{ background: GREEN, color: "#ffffff" }}>TG</div>
             <span className="font-semibold text-sm">TRIDHM GARG</span>
             <span className="text-[11px] opacity-50 hidden sm:inline">AI_RESEARCHER · AUTHOR</span>
-          </div>
-          <div className="flex gap-4 sm:gap-5 text-[10px] sm:text-[11px] opacity-70 flex-wrap">
+          </Link>
+          <div className="flex gap-3 sm:gap-4 text-[10px] sm:text-[11px] opacity-70 flex-wrap">
             <a href="#education" className="hover:opacity-100" style={{ color: TINTS.education.accent }}>EDUCATION</a>
             <a href="#software" className="hover:opacity-100" style={{ color: TINTS.software.accent }}>SOFTWARE</a>
             <a href="#research" className="hover:opacity-100" style={{ color: TINTS.research.accent }}>RESEARCH</a>
             <a href="#writing" className="hover:opacity-100" style={{ color: TINTS.writing.accent }}>WRITING</a>
             <a href="#service" className="hover:opacity-100" style={{ color: TINTS.service.accent }}>SERVICE</a>
+            <a href="#interests" className="hover:opacity-100 hidden sm:inline" style={{ color: TINTS.interests.accent }}>INTERESTS</a>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 pt-6 pb-10">
 
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
@@ -712,7 +717,7 @@ export default function DesignK() {
             </Reveal>
 
             <Reveal delay={150}>
-              <div>
+              <div id="interests">
                 <Label color={TINTS.interests.accent}>◎ INTERESTED_IN</Label>
                 <Panel tint={TINTS.interests} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.interests.border }}>
@@ -769,6 +774,7 @@ export default function DesignK() {
           </div>
         </div>
       </div>
+      <BackToTop color={GREEN} />
     </div>
   );
 }
