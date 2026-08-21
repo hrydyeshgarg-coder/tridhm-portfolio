@@ -292,11 +292,11 @@ export default function DesignK() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/leadership-banner.png"
+                      src="/images/leadership-banner2.png"
                       alt="Illustration listing leadership traits: integrity, vision, positive attitude, sense of humor, solid communicator, inspiring"
-                      width={1536}
-                      height={1024}
-                      className="w-full h-[275px] object-cover object-[50%_10%] block"
+                      width={2067}
+                      height={761}
+                      className="w-full h-[275px] object-cover object-[50%_25%] block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.leadership.bg} 0%, transparent 100%)` }} />
                   </div>
