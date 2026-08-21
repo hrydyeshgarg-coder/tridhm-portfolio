@@ -364,6 +364,16 @@ export default function DesignK() {
                       </div>
                     ))}
                   </div>
+                  <div className="relative">
+                    <Image
+                      src="/images/bootcamps-banner.png"
+                      alt="Illustration of a student in a boot camp classroom with a whiteboard showing AI model training steps"
+                      width={1672}
+                      height={941}
+                      className="w-full h-[275px] object-cover object-[50%_20%] block"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.bootcamps.bg} 0%, transparent 100%)` }} />
+                  </div>
                 </Panel>
               </div>
             </Reveal>
