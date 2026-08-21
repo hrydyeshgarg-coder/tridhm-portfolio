@@ -514,11 +514,25 @@ export default function DesignK() {
                           His interest is to connect with new audiences and write more and more
                           novels on different genres.&rdquo;
                         </p>
-                        <p className="text-[11px] opacity-55">
-                          A second manuscript, <em>Hell on Planet B</em>, was completed in 2024
-                          and is not yet published.
-                        </p>
                       </div>
+                    </div>
+
+                    <div className="mt-5 pt-5 border-t" style={{ borderColor: TINTS.writing.border }}>
+                      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
+                        <h4 className="text-[14px] font-semibold">Hell on Planet B</h4>
+                        <span className="text-[9px] px-1.5 py-0.5 rounded font-semibold uppercase tracking-wide" style={{ background: `${TINTS.writing.accent}18`, color: TINTS.writing.accent }}>Coming Soon</span>
+                      </div>
+                      <p className="text-[12px] opacity-70 leading-relaxed mb-3">
+                        A science-fiction war novel exploring the human consequences of conflict
+                        on another planet.
+                      </p>
+                      <ul className="text-[11px] opacity-70 leading-relaxed list-disc pl-4 flex flex-col gap-1 mb-2">
+                        <li>Wrote and completed a science-fiction novel centered on an interplanetary war and its devastating consequences.</li>
+                        <li>Developed a complex plot about a man struggling with deep resentment toward his own family amid the chaos of war.</li>
+                        <li>Explored themes of war, family, hatred, survival, and the psychological effects of violence.</li>
+                        <li>Independently brainstormed, drafted, edited, and completed the manuscript.</li>
+                      </ul>
+                      <p className="text-[11px] opacity-55">Coming soon on Amazon.</p>
                     </div>
                   </div>
                   <div className="relative">
