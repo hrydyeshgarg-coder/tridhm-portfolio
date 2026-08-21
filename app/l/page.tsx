@@ -171,6 +171,7 @@ export default function DesignK() {
                     <div className="flex gap-3 flex-wrap">
                       <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
                       <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
+                      <Link href="/l/about-me" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
                     </div>
                   </div>
                 </Panel>
