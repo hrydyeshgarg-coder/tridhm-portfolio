@@ -100,13 +100,11 @@ const AWARDS = [
   { label: "Jammin' Jags — Teacher Nomination", date: "2024 & 2025" },
 ];
 const INTERESTS = [
-  { label: "AI for social good", slug: "ai-for-social-good" },
-  { label: "Mental health & wellbeing", slug: "mental-health-wellbeing" },
-  { label: "Civic technology", slug: "civic-technology" },
-  { label: "Historical fiction & sci-fi", slug: "historical-fiction-scifi" },
-  { label: "Federated & privacy-preserving ML", slug: "federated-privacy-ml" },
-  { label: "Financial modeling", slug: "financial-modeling" },
-  { label: "Community organizing", slug: "community-organizing" },
+  { n: "01", title: "Artificial Intelligence — I Want to Understand It, Not Just Use It", quote: "I don't just want to become someone who knows how to use AI. I want to understand how it evolved, how the models actually work, how they learn from data, why they sometimes fail, and eventually how we can use them responsibly to make people's lives better.", slug: "artificial-intelligence" },
+  { n: "02", title: "Research — I Like Questions That Don't Already Have Answers", quote: "I like taking something I don't understand and slowly figuring out how I could find an answer.", slug: "research" },
+  { n: "03", title: "History — I Want to Understand Why Things Happened", quote: "History helps me understand how people made decisions in the past, and that makes me think harder about the decisions we're making about our future.", slug: "history" },
+  { n: "04", title: "Writing & Storytelling — I Like Creating Worlds That Don't Exist", quote: "AI lets me explore what machines can learn. Writing lets me explore what people feel, fear, believe, and become.", slug: "writing-storytelling" },
+  { n: "05", title: "People, Leadership & Community — I Want to Understand the Human Side", quote: "The more I learn about technology, the more I realize that understanding people may be just as important as understanding machines.", slug: "people-leadership-community" },
 ];
 const LIFE_LESSONS = [
   { n: "01", title: "I Learned That I Don't Always Have to Have the Answer", quote: "Being a leader isn't about being the smartest or loudest person in the room. Sometimes it's about knowing when to stop talking and actually listen.", slug: "dont-always-have-the-answer" },
@@ -691,10 +689,16 @@ export default function DesignK() {
             <Reveal delay={150}>
               <div>
                 <Label>◎ INTERESTED_IN</Label>
-                <Panel>
-                  <div className="flex flex-wrap gap-2">
+                <Panel className="!p-0 overflow-hidden">
+                  <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
                     {INTERESTS.map((i) => (
-                      <Link key={i.slug} href={`/l/interests/${i.slug}`} className="text-[11px] px-2.5 py-1.5 rounded border hover:opacity-70" style={{ borderColor: BORDER, background: "rgba(13,148,99,0.06)", color: INK }}>{i.label}</Link>
+                      <Link key={i.slug} href={`/l/interests/${i.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
+                        <span className="text-[11px] opacity-40 pt-1">{i.n}</span>
+                        <div>
+                          <h4 className="text-[13px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{i.title}</h4>
+                          <p className="text-[11.5px] opacity-65 leading-relaxed italic">&ldquo;{i.quote}&rdquo;</p>
+                        </div>
+                      </Link>
                     ))}
                   </div>
                 </Panel>
