@@ -24,7 +24,7 @@ export default function Page() {
         <strong>Artificial Neural Network (ANN)</strong>.
       </p>
 
-      <Figure src="/images/depression-infographic.png" alt="Infographic summarizing the dataset, methodology, model comparison, and impact of the depression classification study" caption="Study overview — dataset (3,730 balanced samples), methodology, model comparison, and real-world impact." width={1536} height={1024} />
+      <Figure src="/images/depression-infographic2.png" alt="Infographic summarizing the dataset, methodology, model comparison, and impact of the depression classification study" caption="Study overview — dataset (3,730 balanced samples), methodology, model comparison, and real-world impact." width={1672} height={941} />
 
       <div className="grid grid-cols-3 gap-3">
         <div className="rounded-lg border p-4" style={{ borderColor: "rgba(20,24,20,0.12)", background: "#ffffff" }}>
