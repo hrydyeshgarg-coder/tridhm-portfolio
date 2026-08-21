@@ -55,12 +55,14 @@ const WORK = [
   { n: "01", tag: "IEEE PAPER", title: "Satellite Poverty CNN", desc: "CNN detecting poverty from satellite imagery.", tags: ["Python", "PyTorch", "CNN"], href: "/l/research/satellite-poverty-cnn" },
   { n: "02", tag: "IEEE PAPER", title: "LSTM Market Forecast", desc: "Dual LSTM networks forecasting stock highs/lows.", tags: ["Python", "LSTM", "Pandas"], href: "/l/research/lstm-market-forecast" },
   { n: "03", tag: "LIVE SITE", title: "DFW Community Hub", desc: "Civic platform live for the whole DFW metro.", tags: ["Next.js", "FastAPI", "Supabase"], href: "/l/engineering/dfw-community-hub" },
+  { n: "04", tag: "SUBMITTED", title: "Depression Screening ML", desc: "XGBoost/ANN/RF binary depression classifier on DASS-42.", tags: ["Python", "XGBoost", "ANN"], href: "/l/research/depression-screening-dass42" },
 ];
 
 const RESEARCH_PAPERS = [
   { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png" },
   { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/l/research/lstm-market-forecast", thumb: "/images/lstm-hero.png" },
   { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png" },
+  { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", tags: ["Under Review"], submitted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/l/research/depression-screening-dass42", thumb: "/images/education-desk-trim.png" },
 ];
 
 const SKILLS: [string, number][] = [
@@ -452,11 +454,17 @@ export default function DesignK() {
                           <h4 className="text-[13.5px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{c.title}</h4>
                           <p className="text-[11.5px] opacity-65 leading-relaxed mb-2 max-w-md">{c.desc}</p>
                           <div className="flex flex-wrap items-center gap-1.5">
-                            <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded opacity-80" style={{ background: "rgba(10,112,163,0.1)" }}>
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
-                              IEEE
-                            </span>
+                            {c.submitted ? (
+                              <span className="text-[9px] px-1.5 py-0.5 rounded font-semibold uppercase tracking-wide opacity-90" style={{ background: "rgba(194,97,13,0.12)", color: "#c2610d" }}>
+                                Submitted · Not Yet Accepted
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded opacity-80" style={{ background: "rgba(10,112,163,0.1)" }}>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
+                                IEEE
+                              </span>
+                            )}
                             {c.tags.map((t) => (
                               <span key={t} className="text-[9px] px-1.5 py-0.5 rounded opacity-70" style={{ background: "rgba(20,24,20,0.06)" }}>{t}</span>
                             ))}

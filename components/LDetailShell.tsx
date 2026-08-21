@@ -41,8 +41,8 @@ export function LDetailShell({
   heroImage?: string;
   heroAlt?: string;
   titleLogo?: string;
-  externalHref: string;
-  externalLabel: string;
+  externalHref?: string;
+  externalLabel?: string;
   children: React.ReactNode;
 }) {
   return (
@@ -99,18 +99,20 @@ export function LDetailShell({
           {children}
         </div>
 
-        <div className="mt-14 pt-8 border-t" style={{ borderColor: BORDER }}>
-          <a
-            href={externalHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[13px] font-semibold px-5 py-3 rounded border"
-            style={{ borderColor: GREEN, color: GREEN, background: "#ffffff" }}
-          >
-            {externalLabel}
-            <ExternalLink size={13} />
-          </a>
-        </div>
+        {externalHref && externalLabel && (
+          <div className="mt-14 pt-8 border-t" style={{ borderColor: BORDER }}>
+            <a
+              href={externalHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[13px] font-semibold px-5 py-3 rounded border"
+              style={{ borderColor: GREEN, color: GREEN, background: "#ffffff" }}
+            >
+              {externalLabel}
+              <ExternalLink size={13} />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
