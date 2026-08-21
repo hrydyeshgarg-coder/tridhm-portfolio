@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Rotary Youth Leadership Awards — Tridhm Garg" };
 
@@ -15,6 +15,15 @@ export default function Page() {
         In June 2026, I participated in the Rotary Youth Leadership Awards (RYLA) in
         Denton, TX, completing an intensive 40-hour leadership development program.
       </p>
+
+      <Figure
+        src="/images/ryla-sign.png"
+        alt="Illustration of Tridhm standing next to the RYLA (Rotary Youth Leadership Awards) sign"
+        caption="At the RYLA program in Denton, TX"
+        width={1473}
+        height={1068}
+      />
+
       <p>
         As an active member, I engaged in hands-on, team-based activities designed to
         build and test core competencies in communication and collaborative problem-
