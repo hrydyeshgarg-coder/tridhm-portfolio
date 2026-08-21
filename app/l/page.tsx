@@ -119,11 +119,15 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — real portrait on a matching black background, no seam needed since the source PNG is true alpha */}
+            {/* Hero — real portrait, white panel that fades into light gray behind him */}
             <Reveal>
               <div id="hero">
                 <Label color={GREEN}>◉ WHO_I_AM</Label>
-                <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]" tint={{ bg: "#050505", border: "#050505" }}>
+                <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
+                  <div
+                    className="absolute inset-0"
+                    style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #eceded 52%, #dcdedf 100%)" }}
+                  />
                   <div className="absolute right-0 top-0 bottom-0 flex items-end">
                     <Image
                       src="/images/whoiam-portrait.png"
@@ -136,17 +140,17 @@ export default function DesignK() {
                     />
                   </div>
                   <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[175px] sm:max-w-[188px] min-h-[440px] sm:min-h-[478px]">
-                    <p className="text-[9.5px] opacity-40 mb-1 whitespace-nowrap text-white">&gt; INIT_PORTFOLIO.EXE</p>
+                    <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
                     <p className="text-[9.5px] mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
-                    <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3 text-white">
+                    <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
                       Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
                     </h1>
-                    <p className="text-[11.5px] leading-relaxed opacity-70 mb-4 text-white">
+                    <p className="text-[11.5px] leading-relaxed opacity-70 mb-4">
                       Rising senior researching applied AI, writing published fiction, and shipping software real people use.
                     </p>
                     <div className="flex gap-3 flex-wrap">
-                      <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.06)" }}>VIEW_RESEARCH →</a>
-                      <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border text-white opacity-80" style={{ borderColor: "rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.06)" }}>READ_NOVEL</Link>
+                      <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
+                      <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
                     </div>
                   </div>
                 </Panel>
