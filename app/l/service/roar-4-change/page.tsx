@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Roar 4 Change — Tridhm Garg" };
 
@@ -16,6 +16,14 @@ export default function Page() {
         opportunity to develop critical skills in crisis logistics, empathetic
         communication, and high-pressure team coordination.
       </p>
+
+      <Figure
+        src="/images/roar4change-sign.png"
+        alt="Illustration of Tridhm at a Roar 4 Change shelter"
+        width={1448}
+        height={1086}
+      />
+
       <p>
         By assisting shelter staff with rapid setup, intake procedures, and safety
         enforcement, I gained firsthand experience managing public safety protocols
