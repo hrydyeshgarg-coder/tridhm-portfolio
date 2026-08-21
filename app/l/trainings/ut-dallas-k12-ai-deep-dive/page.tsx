@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "UT Dallas K-12 Outreach — AI Deep Dive — Tridhm Garg" };
 
@@ -16,6 +16,14 @@ export default function Page() {
         intensive technical training initiative focused on the core fundamentals of
         Artificial Intelligence and advanced machine learning models.
       </p>
+
+      <Figure
+        src="/images/utd-k12-sign.png"
+        alt="Illustration of Tridhm at UT Dallas, next to the UT Dallas K-12 Outreach sign"
+        width={1397}
+        height={1126}
+      />
+
       <p>
         During this hands-on program, I investigated, designed, and coded{" "}
         <strong>Greedy Algorithms</strong>, while also building, inspecting, and
