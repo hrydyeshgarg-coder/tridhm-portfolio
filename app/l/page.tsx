@@ -294,9 +294,9 @@ export default function DesignK() {
                     <Image
                       src="/images/leadership-banner.png"
                       alt="Illustration listing leadership traits: integrity, vision, positive attitude, sense of humor, solid communicator, inspiring"
-                      width={1448}
-                      height={1086}
-                      className="w-full h-[275px] object-cover object-[50%_15%] block"
+                      width={1536}
+                      height={1024}
+                      className="w-full h-[275px] object-cover object-[50%_10%] block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.leadership.bg} 0%, transparent 100%)` }} />
                   </div>
