@@ -80,7 +80,7 @@ const SOURCES = [
   { label: "DFW Community Hub", href: "https://www.dfwcomp.org" },
 ];
 const COMMUNITY_SERVICE = [
-  { org: "Roar 4 Change — Shelter Coordinator", date: "Jul 2023 – Dec 2025", desc: "2.5 years supporting homeless shelters across multiple DFW cities — intake, supplies, and resident support.", logo: "/images/logo-roar4change.jpg" },
+  { org: "Roar 4 Change — Shelter Coordinator", date: "Jul 2023 – Dec 2025", desc: "2.5 years supporting homeless shelters across multiple DFW cities — intake, supplies, and resident support.", logo: "/images/logo-roar4change.jpg", href: "/l/service/roar-4-change" },
 ];
 const LEADERSHIP = [
   { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program.", logo: "/images/logo-rotary.png", href: "/l/leadership/rotary-youth-leadership-awards" },
@@ -124,7 +124,9 @@ export default function DesignK() {
       <div className="sticky top-0 z-40 backdrop-blur-md border-b" style={{ background: "rgba(244,245,243,0.9)", borderColor: BORDER }}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-wrap gap-3">
           <Link href="/l" className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded flex items-center justify-center font-bold text-xs" style={{ background: GREEN, color: "#ffffff" }}>TG</div>
+            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+              <Image src="/icon.png" alt="Tridhm Garg" width={80} height={80} className="w-full h-full object-contain" />
+            </div>
             <span className="font-semibold text-sm">TRIDHM GARG</span>
             <span className="text-[11px] opacity-50 hidden sm:inline">AI_RESEARCHER · AUTHOR</span>
           </Link>
@@ -261,24 +263,35 @@ export default function DesignK() {
             </Reveal>
 
             <Reveal delay={100}>
-              <div>
+              <div id="service">
                 <Label color={TINTS.service.accent}>♥ COMMUNITY_SERVICE</Label>
                 <Panel tint={TINTS.service} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.service.border }}>
-                    {COMMUNITY_SERVICE.map((s) => (
-                      <div key={s.org} className="p-4 sm:p-5 flex gap-4 items-start">
-                        <div className="w-11 h-11 rounded-full overflow-hidden border shrink-0 bg-white flex items-center justify-center" style={{ borderColor: TINTS.service.border }}>
-                          <Image src={s.logo} alt="" width={44} height={44} className="w-full h-full object-contain p-1" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
-                            <h4 className="text-[13px] font-semibold">{s.org}</h4>
-                            <span className="text-[10px] opacity-50 shrink-0">{s.date}</span>
+                    {COMMUNITY_SERVICE.map((s) => {
+                      const rowContent = (
+                        <>
+                          <div className="w-11 h-11 rounded-full overflow-hidden border shrink-0 bg-white flex items-center justify-center" style={{ borderColor: TINTS.service.border }}>
+                            <Image src={s.logo} alt="" width={44} height={44} className="w-full h-full object-contain p-1" />
                           </div>
-                          <p className="text-[11.5px] opacity-70 leading-relaxed">{s.desc}</p>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 mb-1.5">
+                              <h4 className="text-[13px] font-semibold">{s.org}</h4>
+                              <span className="text-[10px] opacity-50 shrink-0">{s.date}</span>
+                            </div>
+                            <p className="text-[11.5px] opacity-70 leading-relaxed">{s.desc}</p>
+                          </div>
+                        </>
+                      );
+                      return s.href ? (
+                        <Link key={s.org} href={s.href} className="p-4 sm:p-5 flex gap-4 items-start group hover:opacity-80">
+                          {rowContent}
+                        </Link>
+                      ) : (
+                        <div key={s.org} className="p-4 sm:p-5 flex gap-4 items-start">
+                          {rowContent}
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                   <div className="relative">
                     <Image
@@ -295,7 +308,7 @@ export default function DesignK() {
             </Reveal>
 
             <Reveal delay={120}>
-              <div id="service">
+              <div id="leadership">
                 <Label color={TINTS.leadership.accent}>◆ LEADERSHIP</Label>
                 <Panel tint={TINTS.leadership} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.leadership.border }}>
