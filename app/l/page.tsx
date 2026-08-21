@@ -513,11 +513,11 @@ export default function DesignK() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/writing-banner.png"
-                      alt="Illustration of a boy happily writing at a desk with a typewriter and books"
-                      width={1456}
-                      height={816}
-                      className="w-full h-[275px] object-cover object-[50%_30%] block"
+                      src="/images/writing-banner2.png"
+                      alt="Illustration of the author writing at a desk surrounded by WWII and 1969 Chicago gang-war research imagery"
+                      width={1672}
+                      height={941}
+                      className="w-full h-[275px] object-cover object-[50%_20%] block"
                     />
                     <div className="absolute inset-x-0 top-0 h-12" style={{ background: `linear-gradient(180deg, ${TINTS.writing.bg} 0%, transparent 100%)` }} />
                   </div>
