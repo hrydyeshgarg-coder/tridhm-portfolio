@@ -119,38 +119,34 @@ export default function DesignK() {
         <div className="grid lg:grid-cols-[1fr_1.15fr] gap-4">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4">
-            {/* Hero — new tighter/bigger crop, gradient re-matched to this image's exact background color and position */}
+            {/* Hero — real portrait on a matching black background, no seam needed since the source PNG is true alpha */}
             <Reveal>
               <div id="hero">
                 <Label color={GREEN}>◉ WHO_I_AM</Label>
-                <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
-                  <div
-                    className="absolute inset-0"
-                    style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 32%, #a8c3d8 44%, #a8c3d8 100%)" }}
-                  />
-                  <div className="absolute right-0 top-0 bottom-0 flex items-center">
+                <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]" tint={{ bg: "#050505", border: "#050505" }}>
+                  <div className="absolute right-0 top-0 bottom-0 flex items-end">
                     <Image
-                      src="/images/hero-character-v2.jpg"
-                      alt="Illustration of a student sitting cross-legged with a laptop"
-                      width={868}
-                      height={784}
+                      src="/images/whoiam-portrait.png"
+                      alt="Portrait of Tridhm Garg"
+                      width={1024}
+                      height={1536}
                       priority
-                      sizes="(max-width: 1024px) 60vw, 380px"
-                      className="h-[288px] sm:h-[312px] w-auto object-contain"
+                      sizes="(max-width: 1024px) 55vw, 300px"
+                      className="h-[440px] sm:h-[478px] w-auto object-contain object-bottom"
                     />
                   </div>
                   <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[175px] sm:max-w-[188px] min-h-[440px] sm:min-h-[478px]">
-                    <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
+                    <p className="text-[9.5px] opacity-40 mb-1 whitespace-nowrap text-white">&gt; INIT_PORTFOLIO.EXE</p>
                     <p className="text-[9.5px] mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
-                    <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
+                    <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3 text-white">
                       Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
                     </h1>
-                    <p className="text-[11.5px] leading-relaxed opacity-70 mb-4">
+                    <p className="text-[11.5px] leading-relaxed opacity-70 mb-4 text-white">
                       Rising senior researching applied AI, writing published fiction, and shipping software real people use.
                     </p>
                     <div className="flex gap-3 flex-wrap">
-                      <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
-                      <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
+                      <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.06)" }}>VIEW_RESEARCH →</a>
+                      <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border text-white opacity-80" style={{ borderColor: "rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.06)" }}>READ_NOVEL</Link>
                     </div>
                   </div>
                 </Panel>
