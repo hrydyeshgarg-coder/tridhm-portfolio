@@ -126,16 +126,16 @@ export default function DesignK() {
                 <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
                   <div
                     className="absolute inset-0"
-                    style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #eceded 52%, #dcdedf 100%)" }}
+                    style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a8c3d8 100%)" }}
                   />
                   <div className="absolute right-0 top-0 bottom-0 flex items-end">
                     <Image
-                      src="/images/whoiam-portrait.png"
+                      src="/images/whoiam-portrait-tight.png"
                       alt="Portrait of Tridhm Garg"
-                      width={1024}
-                      height={1536}
+                      width={825}
+                      height={1515}
                       priority
-                      sizes="(max-width: 1024px) 55vw, 300px"
+                      sizes="(max-width: 1024px) 55vw, 260px"
                       className="h-[440px] sm:h-[478px] w-auto object-contain object-bottom"
                     />
                   </div>
