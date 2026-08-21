@@ -24,6 +24,8 @@ const TINTS = {
   bootcamps: { bg: "#fdf1e6", border: "rgba(194,97,13,0.3)", accent: "#c2610d" },
   clubs: { bg: "#fbf6e3", border: "rgba(161,98,7,0.3)", accent: "#a16207" },
   awards: { bg: "#fdf8ec", border: "rgba(146,64,14,0.3)", accent: "#92400e" },
+  interests: { bg: "#e9f7f5", border: "rgba(13,148,136,0.3)", accent: "#0d9488" },
+  learned: { bg: "#fbeef8", border: "rgba(192,38,211,0.3)", accent: "#a21caf" },
 };
 
 function Panel({
@@ -688,9 +690,9 @@ export default function DesignK() {
 
             <Reveal delay={150}>
               <div>
-                <Label>◎ INTERESTED_IN</Label>
-                <Panel className="!p-0 overflow-hidden">
-                  <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
+                <Label color={TINTS.interests.accent}>◎ INTERESTED_IN</Label>
+                <Panel tint={TINTS.interests} className="!p-0 overflow-hidden">
+                  <div className="flex flex-col divide-y" style={{ borderColor: TINTS.interests.border }}>
                     {INTERESTS.map((i) => (
                       <Link key={i.slug} href={`/l/interests/${i.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
                         <span className="text-[11px] opacity-40 pt-1">{i.n}</span>
@@ -707,9 +709,9 @@ export default function DesignK() {
 
             <Reveal delay={155}>
               <div>
-                <Label>✺ WHAT_IVE_LEARNED_SO_FAR_ABOUT_LIFE</Label>
-                <Panel className="!p-0 overflow-hidden">
-                  <div className="flex flex-col divide-y" style={{ borderColor: BORDER }}>
+                <Label color={TINTS.learned.accent}>✺ WHAT_IVE_LEARNED_SO_FAR_ABOUT_LIFE</Label>
+                <Panel tint={TINTS.learned} className="!p-0 overflow-hidden">
+                  <div className="flex flex-col divide-y" style={{ borderColor: TINTS.learned.border }}>
                     {LIFE_LESSONS.map((l) => (
                       <Link key={l.slug} href={`/l/learned/${l.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
                         <span className="text-[11px] opacity-40 pt-1">{l.n}</span>
