@@ -64,9 +64,9 @@ const WORK = [
 ];
 
 const RESEARCH_PAPERS = [
-  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png" },
-  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/l/research/lstm-market-forecast", thumb: "/images/lstm-hero.png" },
-  { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png" },
+  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
+  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/l/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
+  { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
   { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", tags: ["Under Review"], submitted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/l/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
 ];
 
@@ -508,13 +508,15 @@ export default function DesignK() {
                 <Panel tint={TINTS.research} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y p-5 sm:p-6" style={{ borderColor: TINTS.research.border }}>
                     {RESEARCH_PAPERS.map((c) => (
-                      <Link key={c.n} href={c.href} className="grid sm:grid-cols-[auto_auto_1fr_auto] gap-4 items-start py-5 first:pt-0 last:pb-0 group">
+                      <div key={c.n} className="grid sm:grid-cols-[auto_auto_1fr_auto] gap-4 items-start py-5 first:pt-0 last:pb-0 group">
                         <span className="text-[11px] opacity-40 pt-1">{c.n}</span>
-                        <div className="w-14 h-14 rounded-md overflow-hidden shrink-0 hidden sm:block">
+                        <Link href={c.href} className="w-14 h-14 rounded-md overflow-hidden shrink-0 hidden sm:block">
                           <Image src={c.thumb} alt="" width={100} height={100} className="w-full h-full object-cover" />
-                        </div>
+                        </Link>
                         <div>
-                          <h4 className="text-[13.5px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{c.title}</h4>
+                          <Link href={c.href}>
+                            <h4 className="text-[13.5px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{c.title}</h4>
+                          </Link>
                           <p className="text-[11.5px] opacity-65 leading-relaxed mb-2 max-w-md">{c.desc}</p>
                           <div className="flex flex-wrap items-center gap-1.5">
                             {c.submitted ? (
@@ -522,24 +524,31 @@ export default function DesignK() {
                                 Submitted · Not Yet Accepted
                               </span>
                             ) : (
-                              <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded opacity-80" style={{ background: "rgba(10,112,163,0.1)" }}>
+                              <a
+                                href={c.ieeeHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded opacity-80 hover:opacity-100"
+                                style={{ background: "rgba(10,112,163,0.1)" }}
+                              >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
-                                IEEE
-                              </span>
+                                View on IEEE Xplore
+                                <ExternalLink size={9} />
+                              </a>
                             )}
                             {c.tags.map((t) => (
                               <span key={t} className="text-[9px] px-1.5 py-0.5 rounded opacity-70" style={{ background: "rgba(20,24,20,0.06)" }}>{t}</span>
                             ))}
                           </div>
                         </div>
-                        <div className="text-right shrink-0">
+                        <Link href={c.href} className="text-right shrink-0">
                           <p className="text-[15px] font-bold" style={{ color: TINTS.research.accent }}>
                             <Counter value={c.stat} decimals={c.stat % 1 !== 0 ? 3 : 0} suffix={c.statSuffix} />
                           </p>
                           <p className="text-[9px] opacity-50">{c.statLabel}</p>
-                        </div>
-                      </Link>
+                        </Link>
+                      </div>
                     ))}
                   </div>
                   <div className="relative">
