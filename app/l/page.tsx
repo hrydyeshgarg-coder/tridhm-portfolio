@@ -101,6 +101,7 @@ const AWARDS = [
   { label: "National Honor Society", date: "2026" },
   { label: "AP Scholar with Distinction", date: "2025 & 2026" },
   { label: "Jammin' Jags — Teacher Nomination", date: "2024 & 2025" },
+  { label: "Taekwondo America — 1st Degree Probationary Black Belt", date: "2021", desc: "Demonstrated dedication, discipline, perseverance, and commitment to martial arts training." },
 ];
 const INTERESTS = [
   { n: "01", title: "Artificial Intelligence — I Want to Understand It, Not Just Use It", quote: "I don't just want to become someone who knows how to use AI. I want to understand how it evolved, how the models actually work, how they learn from data, why they sometimes fail, and eventually how we can use them responsibly to make people's lives better.", slug: "artificial-intelligence" },
@@ -727,7 +728,7 @@ export default function DesignK() {
                   <Panel tint={TINTS.awards}>
                     <div className="flex flex-col gap-2.5">
                       {AWARDS.map((a) => (
-                        <div key={a.label} className="flex items-center justify-between text-[11.5px]">
+                        <div key={a.label} className="flex items-center justify-between text-[11.5px]" title={a.desc}>
                           <span className="opacity-85">{a.label}</span>
                           <span className="opacity-50 text-[10px]">{a.date}</span>
                         </div>
