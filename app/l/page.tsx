@@ -235,7 +235,7 @@ export default function DesignK() {
                           <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ background: `${GREEN}18`, color: GREEN }}>
                             {w.tag === "IEEE PAPER" && (
                               // eslint-disable-next-line @next/next/no-img-element
-                              <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
+                              <img src="/images/logo-ieee.svg" alt="" className="h-3 w-auto" />
                             )}
                             {w.tag === "LIVE SITE" && (
                               // eslint-disable-next-line @next/next/no-img-element
@@ -528,11 +528,11 @@ export default function DesignK() {
                                 href={c.ieeeHref}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded opacity-80 hover:opacity-100"
-                                style={{ background: "rgba(10,112,163,0.1)" }}
+                                className="inline-flex items-center gap-1.5 text-[9px] px-1.5 py-1 rounded border opacity-90 hover:opacity-100"
+                                style={{ background: "#ffffff", borderColor: "rgba(10,112,163,0.35)" }}
                               >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/logo-ieee.svg" alt="" className="h-2.5 w-auto" />
+                                <img src="/images/logo-ieee.svg" alt="" className="h-3.5 w-auto" />
                                 View on IEEE Xplore
                                 <ExternalLink size={9} />
                               </a>
