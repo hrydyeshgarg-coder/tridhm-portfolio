@@ -42,7 +42,7 @@ export default function Page() {
         held-out set is a fair measure of how well it would work on a brand-new region.
       </p>
 
-      <Figure src="/images/poverty-methodology.jpg" alt="Methodology flowchart: image dataset to data visualization, preprocessing, conversion, splitting, training, and result" caption="Fig. 1 — the full pipeline: raw image dataset → preprocessing → CNN training → evaluation on held-out test data." width={900} height={500} />
+      <Figure src="/images/poverty-methodology-trim.jpg" alt="Methodology flowchart: image dataset to data visualization, preprocessing, conversion, splitting, training, and result" caption="Fig. 1 — the full pipeline: raw image dataset → preprocessing → CNN training → evaluation on held-out test data." width={656} height={219} />
 
       <p>
         The final model reached <strong>90% accuracy</strong> on the test set — a strong
