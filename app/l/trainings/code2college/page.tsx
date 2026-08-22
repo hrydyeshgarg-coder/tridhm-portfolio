@@ -1,4 +1,4 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { LDetailShell, Figure } from "@/components/LDetailShell";
 
 export const metadata = { title: "Code2College — Tridhm Garg" };
 
@@ -16,6 +16,14 @@ export default function Page() {
         development and technical training initiative designed to prepare high
         school students for careers in STEM.
       </p>
+
+      <Figure
+        src="/images/code2college-sign.png"
+        alt="Illustration of Tridhm at his desk, working with the Code2College program"
+        width={1086}
+        height={1448}
+      />
+
       <p>
         During this summer program, I mastered Python programming and applied it
         directly to building hands-on software development projects. Working
