@@ -162,7 +162,7 @@ export default function DesignK() {
                       to fit next to the text), and only switches the photo to an
                       absolutely-positioned right-edge bleed once there's room for the
                       full-size version (sm: and up). */}
-                  <div className="relative z-10 flex flex-row sm:block">
+                  <div className="relative z-10 flex flex-row items-end sm:block">
                     <div className="flex-1 min-w-0 sm:flex-none flex flex-col justify-center py-6 px-4 sm:py-8 sm:px-8 sm:max-w-[188px] sm:min-h-[478px]">
                       <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
                       <p className="text-[9.5px] mb-4 sm:mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
@@ -178,15 +178,15 @@ export default function DesignK() {
                         <Link href="/about-me" className="text-[11px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
                       </div>
                     </div>
-                    <div className="shrink-0 flex items-end justify-center pr-2 pb-4 sm:pr-0 sm:pb-0 sm:absolute sm:right-[95px] sm:top-0 sm:bottom-0">
+                    <div className="shrink-0 flex justify-center pr-2 sm:pr-0 sm:absolute sm:right-[95px] sm:top-0 sm:bottom-0 sm:flex sm:items-end sm:justify-start">
                       <Image
                         src="/images/whoiam-portrait-tight.png"
                         alt="Portrait of Tridhm Garg"
                         width={825}
                         height={1515}
                         priority
-                        sizes="(max-width: 639px) 35vw, (max-width: 1024px) 55vw, 260px"
-                        className="h-[190px] sm:h-[478px] w-auto object-contain object-bottom"
+                        sizes="(max-width: 639px) 40vw, (max-width: 1024px) 55vw, 260px"
+                        className="h-[219px] sm:h-[478px] w-auto object-contain object-bottom"
                       />
                     </div>
                   </div>
