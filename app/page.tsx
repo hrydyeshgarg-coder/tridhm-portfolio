@@ -64,7 +64,7 @@ const WORK = [
 ];
 
 const RESEARCH_PAPERS = [
-  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", presentedAt: "2024 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA), December 2024", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
+  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", presentedAt: "2024 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA), December 2024", citedBy: "Lukmana et al., “Edge-Aware AI-Model: A Lightweight Deep-Learning for Mapping of Child Growth,” 2025 Tenth International Conference on Informatics and Computing (ICIC), 2025", citedByHref: "https://ieeexplore.ieee.org/document/11309636", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
   { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting a publicly traded company's daily high and low prices from a decade of trading history.", presentedAt: "2025 5th International Conference on Advancement in Electronics & Communication Engineering (AECE), November 2025", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
   { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", presentedAt: "2026 6th International Conference on Intelligent Technologies (CONIT), June 19–21, 2026", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
   { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", presentingAt: "International Conference on Emerging Digital Intelligence and Generative Engineering (ICEDIGE 2026), October 30–31, 2026", tags: ["ICEDIGE 2026"], accepted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
@@ -537,6 +537,18 @@ export default function DesignK() {
                           {c.presentingAt && (
                             <p className="text-[10.5px] font-medium mb-2" style={{ color: TINTS.research.accent }}>
                               📅 Accepted — presenting at {c.presentingAt}
+                            </p>
+                          )}
+                          {c.citedBy && (
+                            <p className="text-[10.5px] opacity-70 mb-2 leading-relaxed">
+                              📖 Cited by:{" "}
+                              {c.citedByHref ? (
+                                <a href={c.citedByHref} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: TINTS.research.accent }}>
+                                  {c.citedBy}
+                                </a>
+                              ) : (
+                                c.citedBy
+                              )}
                             </p>
                           )}
                           <div className="flex flex-wrap items-center gap-1.5">

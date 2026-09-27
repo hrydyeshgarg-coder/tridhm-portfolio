@@ -70,6 +70,15 @@ export default function Page() {
           AI-Model: A Lightweight Deep-Learning for Mapping of Child Growth,&rdquo; 2025 Tenth
           International Conference on Informatics and Computing (ICIC), pp.&nbsp;1&ndash;5, 2025.
         </p>
+        <a
+          href="https://ieeexplore.ieee.org/document/11309636"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-[11px] font-semibold underline mt-2"
+          style={{ color: "#0d9463" }}
+        >
+          View citing paper on IEEE Xplore
+        </a>
       </div>
     </DetailShell>
   );
