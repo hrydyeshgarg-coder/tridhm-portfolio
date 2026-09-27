@@ -539,28 +539,6 @@ export default function DesignK() {
                               📅 Accepted — presenting at {c.presentingAt}
                             </p>
                           )}
-                          {c.citedBy && (
-                            <div className="p-3 rounded-lg border-2 mb-2" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
-                              <p className="text-[10.5px] font-semibold flex items-center gap-1.5" style={{ color: TINTS.research.accent }}>
-                                📖 Cited By
-                              </p>
-                              <p className="text-[10.5px] opacity-75 mt-1 leading-relaxed">{c.citedBy}</p>
-                              {c.citedByHref && (
-                                <a
-                                  href={c.citedByHref}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1.5 text-[9px] px-1.5 py-1 rounded border opacity-90 hover:opacity-100 mt-2"
-                                  style={{ background: "#ffffff", borderColor: "rgba(10,112,163,0.35)" }}
-                                >
-                                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                                  <img src="/images/logo-ieee.svg" alt="" className="h-3.5 w-auto" />
-                                  View on IEEE Xplore
-                                  <ExternalLink size={9} />
-                                </a>
-                              )}
-                            </div>
-                          )}
                           <div className="flex flex-wrap items-center gap-1.5">
                             {c.accepted ? (
                               <span className="text-[9px] px-1.5 py-0.5 rounded font-semibold uppercase tracking-wide opacity-90" style={{ background: "rgba(13,148,99,0.12)", color: "#0d9463" }}>
@@ -591,6 +569,28 @@ export default function DesignK() {
                           </p>
                           <p className="text-[9px] opacity-50">{c.statLabel}</p>
                         </Link>
+                        {c.citedBy && (
+                          <div className="sm:col-span-4 p-4 rounded-lg border-2" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
+                            <p className="text-[12px] font-semibold flex items-center gap-2" style={{ color: TINTS.research.accent }}>
+                              📖 Cited By
+                            </p>
+                            <p className="text-[11.5px] opacity-75 mt-1.5 leading-relaxed">{c.citedBy}</p>
+                            {c.citedByHref && (
+                              <a
+                                href={c.citedByHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 text-[9px] px-1.5 py-1 rounded border opacity-90 hover:opacity-100 mt-2"
+                                style={{ background: "#ffffff", borderColor: "rgba(10,112,163,0.35)" }}
+                              >
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/logo-ieee.svg" alt="" className="h-3.5 w-auto" />
+                                View on IEEE Xplore
+                                <ExternalLink size={9} />
+                              </a>
+                            )}
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
