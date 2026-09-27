@@ -67,7 +67,7 @@ const RESEARCH_PAPERS = [
   { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", presentedAt: "2024 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA), December 2024", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
   { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting a publicly traded company's daily high and low prices from a decade of trading history.", presentedAt: "2025 5th International Conference on Advancement in Electronics & Communication Engineering (AECE), November 2025", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
   { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", presentedAt: "2026 6th International Conference on Intelligent Technologies (CONIT), June 19–21, 2026", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
-  { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", presentingAt: "International Conference on Emerging Digital Intelligence and Generative Engineering (EDIGE 2026), October 30–31, 2026", tags: ["EDIGE 2026"], accepted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
+  { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", presentingAt: "International Conference on Emerging Digital Intelligence and Generative Engineering (ICEDIGE 2026), October 30–31, 2026", tags: ["ICEDIGE 2026"], accepted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
 ];
 
 const SKILLS: [string, number][] = [
@@ -462,7 +462,7 @@ export default function DesignK() {
                     [2025] Published second IEEE paper — presented at AECE.<br />
                     [2026] Shipped dfwcomp.org.<br />
                     [2026] Published third IEEE paper — presented at CONIT.<br />
-                    [2026] Invited as a peer reviewer for EDIGE 2026.
+                    [2026] Invited as a peer reviewer for ICEDIGE 2026.
                   </p>
                 </Panel>
                 <Panel>
@@ -573,11 +573,12 @@ export default function DesignK() {
                   </div>
                   <div className="mx-5 sm:mx-6 mb-5 p-4 rounded-lg border-2" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
                     <p className="text-[12px] font-semibold flex items-center gap-2" style={{ color: TINTS.research.accent }}>
-                      🎓 Invited Reviewer — EDIGE 2026
+                      🎓 Invited Reviewer — ICEDIGE 2026
                     </p>
-                    <p className="text-[11.5px] opacity-70 mt-1 leading-relaxed">
-                      Invited to serve as a peer reviewer for the International Conference on Emerging
-                      Digital Intelligence and Generative Engineering (EDIGE 2026).
+                    <p className="text-[11.5px] opacity-70 mt-1.5 leading-relaxed">
+                      Invited as a Research Paper Reviewer for ICEDIGE 2026 — selected to evaluate
+                      research in AI, Deep Learning, LLM Security &amp; AI-IoT. Assigned four emerging
+                      AI research papers for peer review.
                     </p>
                   </div>
                   <div className="relative">

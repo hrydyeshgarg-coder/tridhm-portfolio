@@ -7,14 +7,14 @@ export default function Page() {
     <DetailShell
       eyebrow="IEEE Research Paper · Co-Author · Accepted"
       title="Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset"
-      meta="International Conference on Emerging Digital Intelligence and Generative Engineering (EDIGE 2026) · October 30–31, 2026"
-      tags={["Python", "XGBoost", "Random Forest", "ANN", "EDIGE 2026"]}
+      meta="International Conference on Emerging Digital Intelligence and Generative Engineering (ICEDIGE 2026) · October 30–31, 2026"
+      tags={["Python", "XGBoost", "Random Forest", "ANN", "ICEDIGE 2026"]}
       heroImage="/images/depression-hero.png"
       heroAlt="Illustration of mental health analytics using AI and machine learning"
     >
       <p className="text-[13px] font-semibold" style={{ color: "#0d9463" }}>
         📅 Accepted — presenting at the International Conference on Emerging Digital
-        Intelligence and Generative Engineering (EDIGE 2026), October 30–31, 2026.
+        Intelligence and Generative Engineering (ICEDIGE 2026), October 30–31, 2026.
       </p>
       <p>
         Identifying depression early can help ensure timely intervention and improved
@@ -59,7 +59,7 @@ export default function Page() {
         <strong>digital depression screening for students and young adults</strong>.
       </p>
       <p className="text-[13px] opacity-60 italic">
-        This paper has been accepted to EDIGE 2026 and is scheduled for presentation at
+        This paper has been accepted to ICEDIGE 2026 and is scheduled for presentation at
         the end of October 2026. This page will be updated with the IEEE Xplore link
         once it&rsquo;s published.
       </p>
