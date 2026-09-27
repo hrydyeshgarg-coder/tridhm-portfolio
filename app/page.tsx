@@ -461,7 +461,8 @@ export default function DesignK() {
                     [2024] Self-published debut novel.<br />
                     [2025] Published second IEEE paper — presented at AECE.<br />
                     [2026] Shipped dfwcomp.org.<br />
-                    [2026] Published third IEEE paper — presented at CONIT.
+                    [2026] Published third IEEE paper — presented at CONIT.<br />
+                    [2026] Invited as a peer reviewer for EDIGE 2026.
                   </p>
                 </Panel>
                 <Panel>
@@ -569,6 +570,15 @@ export default function DesignK() {
                         </Link>
                       </div>
                     ))}
+                  </div>
+                  <div className="mx-5 sm:mx-6 mb-5 p-4 rounded-lg border-2" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
+                    <p className="text-[12px] font-semibold flex items-center gap-2" style={{ color: TINTS.research.accent }}>
+                      🎓 Invited Reviewer — EDIGE 2026
+                    </p>
+                    <p className="text-[11.5px] opacity-70 mt-1 leading-relaxed">
+                      Invited to serve as a peer reviewer for the International Conference on Emerging
+                      Digital Intelligence and Generative Engineering (EDIGE 2026).
+                    </p>
                   </div>
                   <div className="relative">
                     <Image
