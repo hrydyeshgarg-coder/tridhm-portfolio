@@ -460,6 +460,7 @@ export default function DesignK() {
                     [2024] Published first IEEE paper — presented at ICAIQSA.<br />
                     [2024] Self-published debut novel.<br />
                     [2025] Published second IEEE paper — presented at AECE.<br />
+                    [2025] First IEEE paper cited by another published paper (ICIC 2025).<br />
                     [2026] Shipped dfwcomp.org.<br />
                     [2026] Published third IEEE paper — presented at CONIT.<br />
                     [2026] Invited as a peer reviewer for ICEDIGE 2026.
