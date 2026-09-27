@@ -540,16 +540,26 @@ export default function DesignK() {
                             </p>
                           )}
                           {c.citedBy && (
-                            <p className="text-[10.5px] opacity-70 mb-2 leading-relaxed">
-                              📖 Cited by:{" "}
-                              {c.citedByHref ? (
-                                <a href={c.citedByHref} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: TINTS.research.accent }}>
-                                  {c.citedBy}
+                            <div className="p-3 rounded-lg border-2 mb-2 max-w-md" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
+                              <p className="text-[10.5px] font-semibold flex items-center gap-1.5" style={{ color: TINTS.research.accent }}>
+                                📖 Cited By
+                              </p>
+                              <p className="text-[10.5px] opacity-75 mt-1 leading-relaxed">{c.citedBy}</p>
+                              {c.citedByHref && (
+                                <a
+                                  href={c.citedByHref}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1.5 text-[9px] px-1.5 py-1 rounded border opacity-90 hover:opacity-100 mt-2"
+                                  style={{ background: "#ffffff", borderColor: "rgba(10,112,163,0.35)" }}
+                                >
+                                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                                  <img src="/images/logo-ieee.svg" alt="" className="h-3.5 w-auto" />
+                                  View on IEEE Xplore
+                                  <ExternalLink size={9} />
                                 </a>
-                              ) : (
-                                c.citedBy
                               )}
-                            </p>
+                            </div>
                           )}
                           <div className="flex flex-wrap items-center gap-1.5">
                             {c.accepted ? (

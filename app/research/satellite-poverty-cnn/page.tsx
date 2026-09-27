@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Satellite Poverty Prediction — Tridhm Garg" };
@@ -74,10 +75,13 @@ export default function Page() {
           href="https://ieeexplore.ieee.org/document/11309636"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-[11px] font-semibold underline mt-2"
-          style={{ color: "#0d9463" }}
+          className="inline-flex items-center gap-2 text-[12px] font-semibold px-4 py-2 rounded border mt-2"
+          style={{ borderColor: "rgba(10,112,163,0.35)", background: "#ffffff", color: "#14181c" }}
         >
-          View citing paper on IEEE Xplore
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo-ieee.svg" alt="" className="h-4 w-auto" />
+          View Citing Paper on IEEE Xplore
+          <ExternalLink size={12} />
         </a>
       </div>
     </DetailShell>
