@@ -59,6 +59,18 @@ export default function Page() {
       <p>
         The paper was co-authored and published to IEEE Xplore.
       </p>
+
+      <div className="p-4 rounded-lg border-2" style={{ borderColor: "#0d9463", background: "#0d946308" }}>
+        <p className="text-[12px] font-semibold flex items-center gap-2" style={{ color: "#0d9463" }}>
+          📖 Cited By
+        </p>
+        <p className="text-[11.5px] opacity-75 mt-1.5 leading-relaxed">
+          Hen Hen Lukmana, Muhammad Al-Husaini, Iseu Siti Aisyah, Lilik Hidayanti, Luh Desi
+          Puspareni, Vito Hafizh Cahaya Putra, Muhammad Sidiq Asyaky, &ldquo;Edge-Aware
+          AI-Model: A Lightweight Deep-Learning for Mapping of Child Growth,&rdquo; 2025 Tenth
+          International Conference on Informatics and Computing (ICIC), pp.&nbsp;1&ndash;5, 2025.
+        </p>
+      </div>
     </DetailShell>
   );
 }
