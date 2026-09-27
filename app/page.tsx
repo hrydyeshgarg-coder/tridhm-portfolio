@@ -457,11 +457,11 @@ export default function DesignK() {
                 <Panel>
                   <Label>&gt; BUILD_LOG</Label>
                   <p className="text-[11px] leading-6 opacity-60">
-                    [2024] Published first IEEE paper.<br />
+                    [2024] Published first IEEE paper — presented at ICAIQSA.<br />
                     [2024] Self-published debut novel.<br />
-                    [2025] Published second IEEE paper.<br />
+                    [2025] Published second IEEE paper — presented at AECE.<br />
                     [2026] Shipped dfwcomp.org.<br />
-                    [2026] Published third IEEE paper.
+                    [2026] Published third IEEE paper — presented at CONIT.
                   </p>
                 </Panel>
                 <Panel>
