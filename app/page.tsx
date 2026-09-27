@@ -156,36 +156,39 @@ export default function DesignK() {
                     className="absolute inset-0"
                     style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a8c3d8 100%)" }}
                   />
-                  {/* Text sits ABOVE the photo in normal document flow on mobile (never
-                      overlapped — the photo below is a separate, later block), and only
-                      becomes an absolutely-positioned narrow left column once there's
-                      room (sm: and up) for the photo to bleed off the right edge
-                      alongside it without colliding. */}
-                  <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 sm:max-w-[188px] sm:min-h-[478px]">
-                    <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
-                    <p className="text-[9.5px] mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
-                    <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
-                      Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
-                    </h1>
-                    <p className="text-[11.5px] leading-relaxed opacity-70 mb-4">
-                      Rising senior researching applied AI, writing published fiction, and shipping software real people use.
-                    </p>
-                    <div className="flex gap-3 flex-wrap">
-                      <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
-                      <Link href="/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
-                      <Link href="/about-me" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
+                  {/* Photo stays BESIDE the text at every width, same as the desktop
+                      design — on mobile this wrapper is a real flex row (text + photo
+                      as normal, non-overlapping flex children, photo sized small enough
+                      to fit next to the text), and only switches the photo to an
+                      absolutely-positioned right-edge bleed once there's room for the
+                      full-size version (sm: and up). */}
+                  <div className="relative z-10 flex flex-row sm:block">
+                    <div className="flex-1 min-w-0 sm:flex-none flex flex-col justify-center py-6 px-4 sm:py-8 sm:px-8 sm:max-w-[188px] sm:min-h-[478px]">
+                      <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
+                      <p className="text-[9.5px] mb-4 sm:mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
+                      <h1 className="text-[17px] sm:text-[22px] font-bold leading-[1.2] mb-3">
+                        Building AI systems <span style={{ color: GREEN }}>and telling stories.</span>
+                      </h1>
+                      <p className="text-[11px] sm:text-[11.5px] leading-relaxed opacity-70 mb-4">
+                        Rising senior researching applied AI, writing published fiction, and shipping software real people use.
+                      </p>
+                      <div className="flex gap-2 sm:gap-3 flex-wrap">
+                        <a href="#research" className="text-[11px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
+                        <Link href="/writing/abandoned-and-left-behind" className="text-[11px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
+                        <Link href="/about-me" className="text-[11px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
+                      </div>
                     </div>
-                  </div>
-                  <div className="relative flex justify-center pb-6 sm:pb-0 sm:absolute sm:right-[95px] sm:top-0 sm:bottom-0 sm:flex sm:items-end sm:justify-start">
-                    <Image
-                      src="/images/whoiam-portrait-tight.png"
-                      alt="Portrait of Tridhm Garg"
-                      width={825}
-                      height={1515}
-                      priority
-                      sizes="(max-width: 639px) 60vw, (max-width: 1024px) 55vw, 260px"
-                      className="h-[280px] sm:h-[478px] w-auto object-contain object-bottom"
-                    />
+                    <div className="shrink-0 flex items-end justify-center pr-2 pb-4 sm:pr-0 sm:pb-0 sm:absolute sm:right-[95px] sm:top-0 sm:bottom-0">
+                      <Image
+                        src="/images/whoiam-portrait-tight.png"
+                        alt="Portrait of Tridhm Garg"
+                        width={825}
+                        height={1515}
+                        priority
+                        sizes="(max-width: 639px) 35vw, (max-width: 1024px) 55vw, 260px"
+                        className="h-[190px] sm:h-[478px] w-auto object-contain object-bottom"
+                      />
+                    </div>
                   </div>
                 </Panel>
               </div>
