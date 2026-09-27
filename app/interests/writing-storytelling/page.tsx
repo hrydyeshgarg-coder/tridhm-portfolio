@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Writing & Storytelling — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Interested In · 04"
       title="Writing & Storytelling — I Like Creating Worlds That Don't Exist"
       meta="On the questions data can't answer"
@@ -15,7 +15,7 @@ export default function Page() {
       <p>There isn&rsquo;t always a correct answer.</p>
       <p>
         I&rsquo;ve written two novels.{" "}
-        <Link href="/l/writing/abandoned-and-left-behind" className="underline">
+        <Link href="/writing/abandoned-and-left-behind" className="underline">
           Abandoned and Left Behind
         </Link>{" "}
         became a roughly 40,000-word novel involving criminals abandoned by their
@@ -57,6 +57,6 @@ export default function Page() {
         AI lets me explore what machines can learn. Writing lets me explore what
         people feel, fear, believe, and become.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

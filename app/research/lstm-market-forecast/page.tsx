@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Intraday Market Forecasting with LSTM — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="IEEE Research Paper · Co-Author"
       title="Intraday Market Analysis and Forecasting with LSTM Networks"
       meta="2025 5th International Conference on Advancement in Electronics & Communication Engineering (AECE) · November 2025"
@@ -61,6 +61,6 @@ export default function Page() {
         of the variance in next-day price movement using historical pattern alone. The
         paper was co-authored and published to IEEE Xplore through the AECE conference.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

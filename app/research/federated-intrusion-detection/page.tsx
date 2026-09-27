@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Federated Intrusion Detection — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="IEEE Research Paper · Co-Author"
       title="Federated Deep Learning for Privacy-Preserving Intrusion Detection in Distributed Network Environments"
       meta="2026 6th International Conference on Intelligent Technologies (CONIT) · June 19–21, 2026"
@@ -52,6 +52,6 @@ export default function Page() {
         training while actually preserving data privacy — directly applicable to
         real-world cybersecurity services.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

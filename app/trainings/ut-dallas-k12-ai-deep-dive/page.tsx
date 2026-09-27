@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "UT Dallas K-12 Outreach — AI Deep Dive — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Training · Jun – Aug 2025"
       title="UT Dallas K-12 Outreach — AI Deep Dive"
       meta="8-week intensive technical training program"
@@ -40,6 +40,6 @@ export default function Page() {
         This experience allowed me to bridge the gap between complex mathematical
         theory and real-world data science applications.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

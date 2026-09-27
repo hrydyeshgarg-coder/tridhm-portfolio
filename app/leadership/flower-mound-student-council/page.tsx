@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Flower Mound High School Student Council — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Leadership · Sep 2023 – Jan 2024"
       title="Flower Mound High School Student Council"
       meta="Weekly meetings, campus events, and school spirit"
@@ -35,6 +35,6 @@ export default function Page() {
         Through this role, I focus on teamwork, event planning, and creative
         problem-solving to make our school a more welcoming and vibrant place.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "People Aren't Data Points — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="What Life Has Taught Me So Far · 03"
       title="I Learned That People Aren't Data Points"
       meta="On the difference between a graph and a person"
@@ -15,7 +15,7 @@ export default function Page() {
         I spend a lot of time looking at numbers. In AI research, there are datasets,
         percentages, accuracy scores, training samples, testing samples, and graphs.
         My{" "}
-        <Link href="/l/research/satellite-poverty-cnn" className="underline">
+        <Link href="/research/satellite-poverty-cnn" className="underline">
           poverty-prediction research
         </Link>
         , for example, involved training a CNN using thousands of satellite images
@@ -44,6 +44,6 @@ export default function Page() {
         What life has taught me so far: Data can help me understand the world, but I
         never want to forget that there are actual people behind the numbers.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Depression Screening ML — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Research Paper · Submitted, Not Yet Accepted"
       title="Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset"
       meta="Co-Author · Submitted for peer review"
@@ -59,6 +59,6 @@ export default function Page() {
         published. This page will be updated with the venue and publication link once a
         decision is reached.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

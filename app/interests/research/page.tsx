@@ -1,10 +1,10 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Research — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Interested In · 02"
       title="Research — I Like Questions That Don't Already Have Answers"
       meta="On not knowing, and why that's the interesting part"
@@ -56,6 +56,6 @@ export default function Page() {
         I like taking something I don&rsquo;t understand and slowly figuring out how
         I could find an answer.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

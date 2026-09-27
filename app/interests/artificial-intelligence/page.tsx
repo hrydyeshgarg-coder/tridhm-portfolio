@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Artificial Intelligence — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Interested In · 01"
       title="Artificial Intelligence — I Want to Understand It, Not Just Use It"
       meta="On architectures, datasets, and asking why instead of just what"
@@ -36,12 +36,12 @@ export default function Page() {
       <p>
         My own research started giving me a chance to explore these questions instead
         of just reading about them. I used{" "}
-        <Link href="/l/research/satellite-poverty-cnn" className="underline">
+        <Link href="/research/satellite-poverty-cnn" className="underline">
           CNNs with satellite imagery for poverty prediction
         </Link>
         , worked with training and testing datasets, and achieved about 90% accuracy
         with a custom CNN. I later worked with{" "}
-        <Link href="/l/research/lstm-market-forecast" className="underline">
+        <Link href="/research/lstm-market-forecast" className="underline">
           LSTM networks for market forecasting
         </Link>
         . Through different AI programs, I also learned about neural networks, CNNs,
@@ -83,6 +83,6 @@ export default function Page() {
         data, why they sometimes fail, and eventually how we can use them responsibly
         to make people&rsquo;s lives better.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

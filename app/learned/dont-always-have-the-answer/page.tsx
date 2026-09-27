@@ -1,10 +1,10 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "I Don't Always Have to Have the Answer — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="What Life Has Taught Me So Far · 01"
       title="I Learned That I Don't Always Have to Have the Answer"
       meta="On leadership, listening, and letting go of being right"
@@ -35,6 +35,6 @@ export default function Page() {
         smartest or loudest person in the room. Sometimes it&rsquo;s about knowing
         when to stop talking and actually listen.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Abandoned and Left Behind — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Published Novel · Self-Published"
       title="Abandoned and Left Behind"
       meta="Published May 14, 2024 · 165 pages · Action-Adventure"
@@ -55,6 +55,6 @@ export default function Page() {
         estranged from the family he fights to return to. It is finished but not yet
         published.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

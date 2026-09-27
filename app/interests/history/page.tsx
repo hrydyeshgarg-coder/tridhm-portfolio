@@ -1,10 +1,10 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "History — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Interested In · 03"
       title="History — I Want to Understand Why Things Happened"
       meta="On decisions made without the benefit of hindsight"
@@ -55,6 +55,6 @@ export default function Page() {
         makes me think harder about the decisions we&rsquo;re making about our
         future.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

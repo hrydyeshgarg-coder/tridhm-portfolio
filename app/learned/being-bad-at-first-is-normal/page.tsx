@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Being Bad at Something at First Is Normal — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="What Life Has Taught Me So Far · 04"
       title="I Learned That Being Bad at Something at First Is Normal"
       meta="On rewrites, runtime errors, and the myth of the first draft"
@@ -17,7 +17,7 @@ export default function Page() {
         I wrote a roughly 40,000-word book, researched its historical background,
         worked on the cover, edited it, published it, and eventually sold copies. I
         later wrote{" "}
-        <Link href="/l/writing/abandoned-and-left-behind" className="underline">
+        <Link href="/writing/abandoned-and-left-behind" className="underline">
           another novel
         </Link>{" "}
         about interplanetary war and its effects on people and families.
@@ -42,6 +42,6 @@ export default function Page() {
         What life has taught me so far: My first attempt doesn&rsquo;t need to be
         amazing. It just needs to exist so I have something to improve.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Satellite Poverty Prediction — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="IEEE Research Paper · Co-Author"
       title="Harnessing Satellite Imagery with Convolutional Neural Networks for Poverty Prediction"
       meta="2024 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA) · December 2024"
@@ -56,6 +56,6 @@ export default function Page() {
         The paper was co-authored, presented at the IEEE ICAIQSA conference, and
         published to IEEE Xplore.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Rotary Youth Leadership Awards — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Leadership · June 2026"
       title="Rotary Youth Leadership Awards (RYLA)"
       meta="Denton, TX · 40-hour intensive leadership development program"
@@ -31,6 +31,6 @@ export default function Page() {
         valuing diverse perspectives, and learning how to unite a team to achieve a
         common goal.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

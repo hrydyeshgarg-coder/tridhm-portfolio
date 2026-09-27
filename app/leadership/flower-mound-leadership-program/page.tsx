@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Flower Mound Leadership Program — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Leadership · Aug 2026 – Apr 2027"
       title="Flower Mound Leadership Program"
       meta="Advanced personal and professional growth initiative"
@@ -35,6 +35,6 @@ export default function Page() {
         personal integrity, and responsible citizenship that I bring to all of my
         team initiatives.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

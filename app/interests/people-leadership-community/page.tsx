@@ -1,10 +1,10 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "People, Leadership & Community — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Interested In · 05"
       title="People, Leadership & Community — I Want to Understand the Human Side"
       meta="On the interest I didn't recognize as an interest at first"
@@ -56,6 +56,6 @@ export default function Page() {
         The more I learn about technology, the more I realize that understanding
         people may be just as important as understanding machines.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

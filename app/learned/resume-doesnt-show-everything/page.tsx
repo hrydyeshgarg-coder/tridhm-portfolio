@@ -1,10 +1,10 @@
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "A Résumé Doesn't Show Everything That Matters — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="What Life Has Taught Me So Far · 05"
       title="I Learned That a Résumé Doesn't Show Everything That Matters"
       meta="On the gap between what's listed and what's real"
@@ -49,6 +49,6 @@ export default function Page() {
         things I do to actually mean something to me — and hopefully to somebody else
         too.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }

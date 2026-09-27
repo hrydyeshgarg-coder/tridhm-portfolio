@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Roar 4 Change — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Community Service · Jul 2023 – Dec 2025"
       title="Roar 4 Change — Shelter Coordinator"
       meta="2.5 years supporting homeless shelters across multiple DFW cities"
@@ -40,6 +40,6 @@ export default function Page() {
         and teamwork, giving me a strong foundation in community leadership and
         public service that I carry into all my future endeavors.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

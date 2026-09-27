@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Denton County Junior Historians — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Leadership · Sep 2025 – May 2027"
       title="Denton County Junior Historians"
       meta="Sponsored by the Denton County Office of History and Culture"
@@ -31,6 +31,6 @@ export default function Page() {
         volunteering at community heritage fairs, I am dedicated to making local
         history accessible, engaging, and unforgettable.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

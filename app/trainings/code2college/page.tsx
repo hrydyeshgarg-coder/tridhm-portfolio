@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "Code2College — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Training · Jun 2026 – Present"
       title="Code2College"
       meta="Workforce development and technical training initiative"
@@ -36,6 +36,6 @@ export default function Page() {
         developing the professional readiness required to excel in elite technology
         and software engineering environments.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

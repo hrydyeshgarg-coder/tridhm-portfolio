@@ -1,10 +1,10 @@
-import { LDetailShell, Figure } from "@/components/LDetailShell";
+import { DetailShell, Figure } from "@/components/DetailShell";
 
 export const metadata = { title: "DFW Community Hub — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="Software Engineering · Live in Production"
       title="DFW Community Hub"
       meta="Developer · June – August 2026 · 20 hours per week"
@@ -48,6 +48,6 @@ export default function Page() {
         residents can visit it, report an issue in their neighborhood today, and have
         it reach the right people.
       </p>
-    </LDetailShell>
+    </DetailShell>
   );
 }

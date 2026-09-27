@@ -55,19 +55,19 @@ const AP_COURSES = [
 ];
 
 const WORK = [
-  { n: "01", tag: "IEEE PAPER", title: "Satellite Poverty CNN", desc: "CNN detecting poverty from satellite imagery.", tags: ["Python", "PyTorch", "CNN"], href: "/l/research/satellite-poverty-cnn" },
-  { n: "02", tag: "IEEE PAPER", title: "LSTM Market Forecast", desc: "Dual LSTM networks forecasting stock highs/lows.", tags: ["Python", "LSTM", "Pandas"], href: "/l/research/lstm-market-forecast" },
-  { n: "03", tag: "IEEE PAPER", title: "Federated Intrusion Detection", desc: "Privacy-preserving federated learning for network intrusion detection.", tags: ["Python", "Federated Learning"], href: "/l/research/federated-intrusion-detection" },
-  { n: "04", tag: "LIVE SITE", title: "DFW Community Hub", desc: "Civic platform live for the whole DFW metro.", tags: ["Next.js", "FastAPI", "Supabase"], href: "/l/engineering/dfw-community-hub" },
-  { n: "05", tag: "SUBMITTED", title: "Depression Screening ML", desc: "XGBoost/ANN/RF binary depression classifier on DASS-42.", tags: ["Python", "XGBoost", "ANN"], href: "/l/research/depression-screening-dass42" },
-  { n: "06", tag: "PUBLISHED BOOK", title: "Abandoned and Left Behind", desc: "165-page action-adventure novel, self-published on Amazon.", tags: ["Amazon", "Fiction", "4.0★"], href: "/l/writing/abandoned-and-left-behind" },
+  { n: "01", tag: "IEEE PAPER", title: "Satellite Poverty CNN", desc: "CNN detecting poverty from satellite imagery.", tags: ["Python", "PyTorch", "CNN"], href: "/research/satellite-poverty-cnn" },
+  { n: "02", tag: "IEEE PAPER", title: "LSTM Market Forecast", desc: "Dual LSTM networks forecasting stock highs/lows.", tags: ["Python", "LSTM", "Pandas"], href: "/research/lstm-market-forecast" },
+  { n: "03", tag: "IEEE PAPER", title: "Federated Intrusion Detection", desc: "Privacy-preserving federated learning for network intrusion detection.", tags: ["Python", "Federated Learning"], href: "/research/federated-intrusion-detection" },
+  { n: "04", tag: "LIVE SITE", title: "DFW Community Hub", desc: "Civic platform live for the whole DFW metro.", tags: ["Next.js", "FastAPI", "Supabase"], href: "/engineering/dfw-community-hub" },
+  { n: "05", tag: "SUBMITTED", title: "Depression Screening ML", desc: "XGBoost/ANN/RF binary depression classifier on DASS-42.", tags: ["Python", "XGBoost", "ANN"], href: "/research/depression-screening-dass42" },
+  { n: "06", tag: "PUBLISHED BOOK", title: "Abandoned and Left Behind", desc: "165-page action-adventure novel, self-published on Amazon.", tags: ["Amazon", "Fiction", "4.0★"], href: "/writing/abandoned-and-left-behind" },
 ];
 
 const RESEARCH_PAPERS = [
-  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
-  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/l/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
-  { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/l/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
-  { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", tags: ["Under Review"], submitted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/l/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
+  { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
+  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
+  { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
+  { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", tags: ["Under Review"], submitted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
 ];
 
 const SKILLS: [string, number][] = [
@@ -80,17 +80,17 @@ const SOURCES = [
   { label: "DFW Community Hub", href: "https://www.dfwcomp.org" },
 ];
 const COMMUNITY_SERVICE = [
-  { org: "Roar 4 Change — Shelter Coordinator", date: "Jul 2023 – Dec 2025", desc: "2.5 years supporting homeless shelters across multiple DFW cities — intake, supplies, and resident support.", logo: "/images/logo-roar4change.jpg", href: "/l/service/roar-4-change" },
+  { org: "Roar 4 Change — Shelter Coordinator", date: "Jul 2023 – Dec 2025", desc: "2.5 years supporting homeless shelters across multiple DFW cities — intake, supplies, and resident support.", logo: "/images/logo-roar4change.jpg", href: "/service/roar-4-change" },
 ];
 const LEADERSHIP = [
-  { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program.", logo: "/images/logo-rotary.png", href: "/l/leadership/rotary-youth-leadership-awards" },
-  { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives.", logo: "/images/logo-denton-county.jpg", href: "/l/leadership/denton-county-junior-historians" },
-  { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting.", logo: "/images/logo-student-leadership.png", href: "/l/leadership/flower-mound-leadership-program" },
-  { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events, including the Flower Mound Showdown.", logo: "/images/logo-fmhs.png", href: "/l/leadership/flower-mound-student-council" },
+  { org: "Rotary Youth Leadership Awards", date: "Jun 2026", desc: "Intensive week-long leadership and communication program.", logo: "/images/logo-rotary.png", href: "/leadership/rotary-youth-leadership-awards" },
+  { org: "Denton County Junior Historians", date: "Sep 2025 – May 2027", desc: "Curated museum exhibits and researched county archives.", logo: "/images/logo-denton-county.jpg", href: "/leadership/denton-county-junior-historians" },
+  { org: "Flower Mound Leadership Program", date: "Aug 2026 – Apr 2027", desc: "Team management, accountability, and goal-setting.", logo: "/images/logo-student-leadership.png", href: "/leadership/flower-mound-leadership-program" },
+  { org: "Flower Mound High School Student Council", date: "Sep 2023 – Jan 2024", desc: "Contributed event ideas and helped organize school events, including the Flower Mound Showdown.", logo: "/images/logo-fmhs.png", href: "/leadership/flower-mound-student-council" },
 ];
 const TRAININGS = [
-  { org: "UT Dallas K-12 Outreach — AI Deep Dive", date: "Jun – Aug 2025", desc: "8-week structured program — neural networks, CNNs, greedy algorithms, trained in PyTorch, Pandas, NumPy, scikit-learn.", logo: "/images/logo-utd.webp", href: "/l/trainings/ut-dallas-k12-ai-deep-dive" },
-  { org: "Code2College", date: "Jun 2026 – Present", desc: "Self-paced Python course — three independent projects completed.", logo: "/images/logo-code2college.png", href: "/l/trainings/code2college" },
+  { org: "UT Dallas K-12 Outreach — AI Deep Dive", date: "Jun – Aug 2025", desc: "8-week structured program — neural networks, CNNs, greedy algorithms, trained in PyTorch, Pandas, NumPy, scikit-learn.", logo: "/images/logo-utd.webp", href: "/trainings/ut-dallas-k12-ai-deep-dive" },
+  { org: "Code2College", date: "Jun 2026 – Present", desc: "Self-paced Python course — three independent projects completed.", logo: "/images/logo-code2college.png", href: "/trainings/code2college" },
 ];
 const BOOTCAMPS = [
   { org: "University of Houston–Victoria Data Science Bootcamp", date: "Jun 2024", desc: "CNNs, deep neural networks, NLP, computer vision, and Big Data fundamentals in Python.", logo: "/images/logo-uhv.png" },
@@ -124,7 +124,7 @@ export default function DesignK() {
       {/* Top nav — sticky, stays visible while scrolling */}
       <div className="sticky top-0 z-40 backdrop-blur-md border-b" style={{ background: "rgba(244,245,243,0.9)", borderColor: BORDER }}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-wrap gap-3">
-          <Link href="/l" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center shrink-0">
               <Image src="/icon.png" alt="Tridhm Garg" width={80} height={80} className="w-full h-full object-contain" />
             </div>
@@ -178,8 +178,8 @@ export default function DesignK() {
                     </p>
                     <div className="flex gap-3 flex-wrap">
                       <a href="#research" className="text-[12px] font-semibold px-4 py-2 rounded border" style={{ borderColor: GREEN, color: GREEN, background: "rgba(255,255,255,0.7)" }}>VIEW_RESEARCH →</a>
-                      <Link href="/l/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
-                      <Link href="/l/about-me" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
+                      <Link href="/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
+                      <Link href="/about-me" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
                     </div>
                   </div>
                 </Panel>
@@ -226,7 +226,7 @@ export default function DesignK() {
 
             <Reveal delay={80}>
               <div>
-                <Label>// SELECTED_WORK</Label>
+                <Label>{"// SELECTED_WORK"}</Label>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {WORK.map((w) => (
                     <Link key={w.n} href={w.href} className="block">
@@ -475,7 +475,7 @@ export default function DesignK() {
               <div id="software">
                 <Label color={TINTS.software.accent}>▣ SOFTWARE_CREATION</Label>
                 <Panel tint={TINTS.software} className="min-h-[440px] sm:min-h-[478px] flex flex-col">
-                  <Link href="/l/engineering/dfw-community-hub" className="block group mb-4">
+                  <Link href="/engineering/dfw-community-hub" className="block group mb-4">
                     <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70 flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full overflow-hidden bg-white border shrink-0 inline-flex items-center justify-center" style={{ borderColor: TINTS.software.border }}>
                         <Image src="/images/logo-civichub.png" alt="" width={24} height={24} className="w-full h-full object-contain" />
@@ -573,7 +573,7 @@ export default function DesignK() {
                 <Panel tint={TINTS.writing} className="!p-0 overflow-hidden">
                   <div className="p-5 sm:p-6">
                     <div className="grid sm:grid-cols-[auto_1fr] gap-5 items-start">
-                      <Link href="/l/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0 items-start">
+                      <Link href="/writing/abandoned-and-left-behind" className="flex gap-2 w-auto shrink-0 mx-auto sm:mx-0 items-start">
                         <div className="w-24 rounded-md overflow-hidden border shadow-sm" style={{ borderColor: TINTS.writing.border }}>
                           <Image src="/images/book1-cover-front.png" alt="Abandoned and Left Behind front cover" width={1024} height={1536} className="w-full h-auto object-contain" />
                         </div>
@@ -582,7 +582,7 @@ export default function DesignK() {
                         </div>
                       </Link>
                       <div>
-                        <Link href="/l/writing/abandoned-and-left-behind" className="block group mb-3">
+                        <Link href="/writing/abandoned-and-left-behind" className="block group mb-3">
                           <h4 className="text-[14px] font-semibold mb-1.5 group-hover:opacity-70">Abandoned and Left Behind</h4>
                           <p className="text-[12px] opacity-70 leading-relaxed">
                             A 165-page self-published action-adventure novel set in 1969 — two men
@@ -745,7 +745,7 @@ export default function DesignK() {
                 <Panel tint={TINTS.interests} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.interests.border }}>
                     {INTERESTS.map((i) => (
-                      <Link key={i.slug} href={`/l/interests/${i.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
+                      <Link key={i.slug} href={`/interests/${i.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
                         <span className="text-[11px] opacity-40 pt-1">{i.n}</span>
                         <div>
                           <h4 className="text-[13px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{i.title}</h4>
@@ -764,7 +764,7 @@ export default function DesignK() {
                 <Panel tint={TINTS.learned} className="!p-0 overflow-hidden">
                   <div className="flex flex-col divide-y" style={{ borderColor: TINTS.learned.border }}>
                     {LIFE_LESSONS.map((l) => (
-                      <Link key={l.slug} href={`/l/learned/${l.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
+                      <Link key={l.slug} href={`/learned/${l.slug}`} className="grid sm:grid-cols-[auto_1fr] gap-4 items-start p-4 sm:p-5 group">
                         <span className="text-[11px] opacity-40 pt-1">{l.n}</span>
                         <div>
                           <h4 className="text-[13px] font-semibold mb-1.5 leading-snug group-hover:opacity-70">{l.title}</h4>
@@ -791,7 +791,7 @@ export default function DesignK() {
             </Reveal>
 
             <div className="flex items-center justify-between px-1 text-[11px] opacity-45">
-              <span className="flex items-center gap-1.5"><Sparkle size={12} /> // THANKS FOR VISITING</span>
+              <span className="flex items-center gap-1.5"><Sparkle size={12} /> {"// THANKS FOR VISITING"}</span>
               <span>FLOWER MOUND, TX</span>
             </div>
           </div>

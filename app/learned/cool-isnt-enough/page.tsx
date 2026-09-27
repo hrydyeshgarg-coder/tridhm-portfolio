@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { LDetailShell } from "@/components/LDetailShell";
+import { DetailShell } from "@/components/DetailShell";
 
 export const metadata = { title: "Doing Something \"Cool\" Isn't Enough for Me — Tridhm Garg" };
 
 export default function Page() {
   return (
-    <LDetailShell
+    <DetailShell
       eyebrow="What Life Has Taught Me So Far · 02"
       title="I Learned That Doing Something &ldquo;Cool&rdquo; Isn't Enough for Me"
       meta="On the shift from 'does it work' to 'what is it for'"
@@ -21,11 +21,11 @@ export default function Page() {
       <p>
         But once I started doing actual research, I started thinking more about what
         all of this technology could be used for. One of my projects used{" "}
-        <Link href="/l/research/satellite-poverty-cnn" className="underline">
+        <Link href="/research/satellite-poverty-cnn" className="underline">
           satellite imagery and AI to predict poverty levels
         </Link>
         , and I also helped build{" "}
-        <Link href="/l/engineering/dfw-community-hub" className="underline">
+        <Link href="/engineering/dfw-community-hub" className="underline">
           a community website
         </Link>{" "}
         that connected people with resources and allowed residents to report
@@ -46,6 +46,6 @@ export default function Page() {
         technology with the fanciest code. Sometimes it&rsquo;s the thing that makes
         one person&rsquo;s life a little easier.
       </blockquote>
-    </LDetailShell>
+    </DetailShell>
   );
 }
