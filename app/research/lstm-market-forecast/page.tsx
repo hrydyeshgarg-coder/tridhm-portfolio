@@ -14,6 +14,10 @@ export default function Page() {
       externalHref="https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf"
       externalLabel="View on IEEE Xplore"
     >
+      <p className="text-[13px] font-semibold" style={{ color: "#0d9463" }}>
+        📍 Presented at the 2025 5th International Conference on Advancement in Electronics &amp;
+        Communication Engineering (AECE), November 2025.
+      </p>
       <p>
         This paper asks whether a model can forecast a stock&rsquo;s daily high and low
         price using nothing but its own trading history — no news sentiment, no
@@ -59,7 +63,7 @@ export default function Page() {
       <p>
         An R² above 0.94 on both models means the networks explain the large majority
         of the variance in next-day price movement using historical pattern alone. The
-        paper was co-authored and published to IEEE Xplore through the AECE conference.
+        paper was co-authored and published to IEEE Xplore.
       </p>
     </DetailShell>
   );

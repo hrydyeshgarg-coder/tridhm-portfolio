@@ -14,6 +14,10 @@ export default function Page() {
       externalHref="https://ieeexplore.ieee.org/document/11621464"
       externalLabel="View on IEEE Xplore"
     >
+      <p className="text-[13px] font-semibold" style={{ color: "#0d9463" }}>
+        📍 Presented at the 2026 6th International Conference on Intelligent Technologies (CONIT),
+        June 19–21, 2026.
+      </p>
       <p>
         Traditional network intrusion detection systems work by pooling raw traffic
         data from every client into one central location to train a single model.

@@ -14,6 +14,10 @@ export default function Page() {
       externalHref="https://ieeexplore.ieee.org/document/10882295"
       externalLabel="View on IEEE Xplore"
     >
+      <p className="text-[13px] font-semibold" style={{ color: "#0d9463" }}>
+        📍 Presented at the 2024 International Conference on Artificial Intelligence and Quantum
+        Computation-Based Sensor Application (ICAIQSA), December 2024.
+      </p>
       <p>
         Ground-truth poverty data is expensive and slow to collect — it usually means
         door-to-door household surveys across regions that are often hard to reach.
@@ -53,8 +57,7 @@ export default function Page() {
       <Figure src="/images/poverty-satellite-4.png" alt="Satellite imagery of a rural village settlement" caption="A more rural settlement pattern from the same imagery set — sparser buildings, different road structure." />
 
       <p>
-        The paper was co-authored, presented at the IEEE ICAIQSA conference, and
-        published to IEEE Xplore.
+        The paper was co-authored and published to IEEE Xplore.
       </p>
     </DetailShell>
   );
