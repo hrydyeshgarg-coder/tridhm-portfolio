@@ -12,8 +12,6 @@ export default function Page() {
       tags={["Python", "PyTorch", "CNN", "Computer Vision"]}
       heroImage="/images/poverty-satellite-1.png"
       heroAlt="Satellite imagery of a densely built settlement"
-      externalHref="https://ieeexplore.ieee.org/document/10882295"
-      externalLabel="View on IEEE Xplore"
     >
       <p className="text-[13px] font-semibold" style={{ color: "#0d9463" }}>
         📍 Presented at the 2024 International Conference on Artificial Intelligence and Quantum
@@ -60,6 +58,19 @@ export default function Page() {
       <p>
         The paper was co-authored and published to IEEE Xplore.
       </p>
+
+      <div className="pt-2">
+        <a
+          href="https://ieeexplore.ieee.org/document/10882295"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[13px] font-semibold px-5 py-3 rounded border"
+          style={{ borderColor: "#0d9463", color: "#0d9463", background: "#ffffff" }}
+        >
+          View on IEEE Xplore
+          <ExternalLink size={13} />
+        </a>
+      </div>
 
       <div className="p-4 rounded-lg border-2" style={{ borderColor: "#0d9463", background: "#0d946308" }}>
         <p className="text-[12px] font-semibold flex items-center gap-2" style={{ color: "#0d9463" }}>

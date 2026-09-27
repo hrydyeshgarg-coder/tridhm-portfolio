@@ -540,7 +540,7 @@ export default function DesignK() {
                             </p>
                           )}
                           {c.citedBy && (
-                            <div className="p-3 rounded-lg border-2 mb-2 max-w-md" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
+                            <div className="p-3 rounded-lg border-2 mb-2" style={{ borderColor: TINTS.research.accent, background: `${TINTS.research.accent}0d` }}>
                               <p className="text-[10.5px] font-semibold flex items-center gap-1.5" style={{ color: TINTS.research.accent }}>
                                 📖 Cited By
                               </p>
