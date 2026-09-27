@@ -21,13 +21,13 @@ export default function Page() {
       </p>
       <p>
         The dataset was ten years of daily price data for{" "}
-        <strong>Infosys Ltd. (2015–2025)</strong>, pulled from Yahoo Finance. The values
+        <strong>a publicly traded company (2015–2025)</strong>, pulled from Yahoo Finance. The values
         were normalized with <strong>Min-Max scaling</strong>, then reshaped into{" "}
         <strong>1,500-timestep sequences</strong> — long historical windows the model
         could draw patterns from.
       </p>
 
-      <Figure src="/images/lstm-price-history.jpg" alt="Line chart of Infosys daily high price from 2015 to 2026" caption="Fig. 2 — ten years of daily high-price history, the raw signal the model learns from." width={900} height={560} />
+      <Figure src="/images/lstm-price-history.jpg" alt="Line chart of a publicly traded company's daily high price from 2015 to 2026" caption="Fig. 2 — ten years of daily high-price history, the raw signal the model learns from." width={900} height={560} />
 
       <p>
         The architecture uses <strong>LSTM (Long Short-Term Memory) networks</strong>, a
@@ -39,7 +39,7 @@ export default function Page() {
 
       <Figure src="/images/lstm-architecture.jpg" alt="System diagram: stock data flows through EDA, preprocessing, LSTM training, evaluation, and ten-day forecasting" caption="The end-to-end pipeline — raw stock data through preprocessing, LSTM training, evaluation, and a 10-day forecast." width={900} height={560} />
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="rounded-lg border p-4" style={{ borderColor: "rgba(20,24,20,0.12)", background: "#ffffff" }}>
           <p className="text-[11px] opacity-55 mb-2">HIGH-PRICE MODEL</p>
           <p className="text-[13px]">R² = 0.954</p>

@@ -26,7 +26,7 @@ export default function Page() {
 
       <Figure src="/images/depression-infographic2.png" alt="Infographic summarizing the dataset, methodology, model comparison, and impact of the depression classification study" caption="Study overview — dataset (3,730 balanced samples), methodology, model comparison, and real-world impact." width={1672} height={941} />
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div className="rounded-lg border p-4" style={{ borderColor: "rgba(20,24,20,0.12)", background: "#ffffff" }}>
           <p className="text-[11px] opacity-55 mb-2">XGBOOST</p>
           <p className="text-[15px] font-bold" style={{ color: "#c2610d" }}>98.72%</p>

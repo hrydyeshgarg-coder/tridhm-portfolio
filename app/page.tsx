@@ -65,7 +65,7 @@ const WORK = [
 
 const RESEARCH_PAPERS = [
   { n: "01", title: "Harnessing Satellite Imagery with CNNs for Poverty Prediction", desc: "A CNN trained to recognize poverty indicators directly from satellite imagery of Africa, validated on unseen data.", tags: ["ICAIQSA 2024"], stat: 90, statSuffix: "%", statLabel: "Accuracy", href: "/research/satellite-poverty-cnn", thumb: "/images/poverty-satellite-1.png", ieeeHref: "https://ieeexplore.ieee.org/document/10882295" },
-  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting Infosys Ltd.'s daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
+  { n: "02", title: "Intraday Market Analysis and Forecasting with LSTM Networks", desc: "Two dedicated LSTM networks forecasting a publicly traded company's daily high and low prices from a decade of trading history.", tags: ["AECE 2025"], stat: 0.954, statSuffix: "", statLabel: "High R²", href: "/research/lstm-market-forecast", thumb: "/images/lstm-hero.png", ieeeHref: "https://ieeexplore.ieee.org/iel8/11386518/11386458/11386631.pdf" },
   { n: "03", title: "Federated Deep Learning for Privacy-Preserving Intrusion Detection", desc: "A federated learning architecture for network intrusion detection that never exposes raw client data.", tags: ["CONIT 2026"], stat: 99.68, statSuffix: "%", statLabel: "Accuracy", href: "/research/federated-intrusion-detection", thumb: "/images/cyber-hero.png", ieeeHref: "https://ieeexplore.ieee.org/document/11621464" },
   { n: "04", title: "Machine Learning-Based Mental Health Assessment and Depression Screening Using the U.S. DASS-42 Dataset", desc: "Random Forest, XGBoost, and ANN compared for binary depression classification on a U.S.-specific subset of DASS-42.", tags: ["Under Review"], submitted: true, stat: 98.72, statSuffix: "%", statLabel: "XGBoost Accuracy", href: "/research/depression-screening-dass42", thumb: "/images/depression-infographic2.png" },
 ];
@@ -151,23 +151,17 @@ export default function DesignK() {
             <Reveal>
               <div id="hero">
                 <Label color={GREEN}>◉ WHO_I_AM</Label>
-                <Panel className="relative overflow-hidden !p-0 min-h-[440px] sm:min-h-[478px]">
+                <Panel className="relative overflow-hidden !p-0 sm:min-h-[478px]">
                   <div
                     className="absolute inset-0"
                     style={{ background: "linear-gradient(90deg, #ffffff 0%, #ffffff 38%, #c3d7e6 52%, #a8c3d8 100%)" }}
                   />
-                  <div className="absolute right-[70px] sm:right-[95px] top-0 bottom-0 flex items-end">
-                    <Image
-                      src="/images/whoiam-portrait-tight.png"
-                      alt="Portrait of Tridhm Garg"
-                      width={825}
-                      height={1515}
-                      priority
-                      sizes="(max-width: 1024px) 55vw, 260px"
-                      className="h-[440px] sm:h-[478px] w-auto object-contain object-bottom"
-                    />
-                  </div>
-                  <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 max-w-[175px] sm:max-w-[188px] min-h-[440px] sm:min-h-[478px]">
+                  {/* Text sits ABOVE the photo in normal document flow on mobile (never
+                      overlapped — the photo below is a separate, later block), and only
+                      becomes an absolutely-positioned narrow left column once there's
+                      room (sm: and up) for the photo to bleed off the right edge
+                      alongside it without colliding. */}
+                  <div className="relative z-10 flex flex-col justify-center py-8 px-6 sm:px-8 sm:max-w-[188px] sm:min-h-[478px]">
                     <p className="text-[9.5px] opacity-45 mb-1 whitespace-nowrap">&gt; INIT_PORTFOLIO.EXE</p>
                     <p className="text-[9.5px] mb-6 font-semibold whitespace-nowrap" style={{ color: GREEN }}>&gt; STATUS: ONLINE</p>
                     <h1 className="text-xl sm:text-[22px] font-bold leading-[1.2] mb-3">
@@ -181,6 +175,17 @@ export default function DesignK() {
                       <Link href="/writing/abandoned-and-left-behind" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>READ_NOVEL</Link>
                       <Link href="/about-me" className="text-[12px] font-semibold px-4 py-2 rounded border opacity-70" style={{ borderColor: BORDER, background: "rgba(255,255,255,0.7)" }}>MORE_ABOUT_ME →</Link>
                     </div>
+                  </div>
+                  <div className="relative flex justify-center pb-6 sm:pb-0 sm:absolute sm:right-[95px] sm:top-0 sm:bottom-0 sm:flex sm:items-end sm:justify-start">
+                    <Image
+                      src="/images/whoiam-portrait-tight.png"
+                      alt="Portrait of Tridhm Garg"
+                      width={825}
+                      height={1515}
+                      priority
+                      sizes="(max-width: 639px) 60vw, (max-width: 1024px) 55vw, 260px"
+                      className="h-[280px] sm:h-[478px] w-auto object-contain object-bottom"
+                    />
                   </div>
                 </Panel>
               </div>
